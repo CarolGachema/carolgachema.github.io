@@ -1,0 +1,97 @@
+---
+title: "Policy Research"
+page-layout: article
+toc: true
+---
+
+```{=html}
+<div style="background:linear-gradient(135deg,#F39C12,#E05A4E);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;">
+  <h1 style="font-family:'DM Serif Display',serif;font-size:2.2rem;font-weight:400;margin-bottom:0.4rem;">Policy Research</h1>
+  <p style="opacity:0.88;font-size:1rem;margin:0;">For equitable health policy for Africa</p>
+</div>
+```
+
+## CCR5Δ32 Mutation Gap: The HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa
+
+::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}
+<span class="skill-badge wet">Publishing in progress</span>
+<span class="skill-badge soft">WHO-Directed</span>
+<span class="skill-badge bio">2025–2026</span>
+:::
+
+### Overview
+
+The paper is a structural and bio-ethical critique of the current global HIV cure paradigm. It argues that while the scientific community celebrates allogeneic hematopoietic stem cell transplantation (allo-HSCT) as a landmark proof of concept, this "cure" is a biological and logistical illusion for Sub-Saharan Africa (SSA), the region that bears over two-thirds of the global HIV burden. 
+The core thesis is that the cure is built on an accidental, Euro centric genetic framework that completely excludes, underfunds, and ignores the populations that need a HIV cure the most
+
+### The Problem
+
+1. **Complete Absence of the Allele** - The cure relies entirely on a donor possessing the homozygous $CCR5\Delta32$ genetic mutation, which stops HIV from entering host cells. 
+- While this mutation exists in about 1% of Northern Europeans, large-scale genomic data shows its frequency is precisely 0% in studied populations across Angola, Nigeria, Zimbabwe, and Ethiopia.The HLA Matching Compound Problem: 
+- Because successful transplants require strict Human Leukocyte Antigen (HLA) tissue matching to prevent fatal graft-versus-host disease, an African patient cannot simply use a European donor. 
+
+2. **The Cost Wall** - A single allo-HSCT procedure costs between $100,000 and $300,000. The procedure demands specialized sterile bone marrow units, advanced blood banking, high-resolution HLA typing tech, and intensive care units equipped for extreme toxicities. These resources are fundamentally absent or severely constrained in most Sub-Saharan healthcare systems.
+
+3. **The Cancer Requirement** - This procedure has never been a standalone treatment for HIV; it is an incredibly aggressive, last-resort intervention for patients who also have life-threatening blood cancers (like leukemia).
+
+
+### Key Recommendations
+
+The paper makes the following recommendations directed at the WHO and trial sponsors:
+
+1. **Commission an SSA** - Focused Cure Agenda: Shift funding to study CCR5-independent remission mechanisms and invest in gene therapies with low-income access guidelines built into the initial trial phases.
+
+2. **Diversify Global Donor Registries** - Launch targeted, well-funded recruitment drives for African, Asian, and Latin American donors to fix the massive European bias in global HLA matching data.
+
+3. **Establish Regional Centers of Excellence** - Fund the construction of at least five regional advanced hematological and gene therapy medical hubs across Sub-Saharan Africa to serve both cure research and broader oncological needs.
+
+4. **Enforce Advance Market Commitments (AMCs)** - Mandate tiered licensing agreements guaranteeing that when a viable, population-agnostic cure is found, it is affordable and accessible to LMICs immediately upon regulatory approval, preventing the multi-decade delay that occurred with early antiretroviral drugs.
+
+
+### Why This Matters
+
+Because all human beings deserve treatment that works for them.
+
+---
+
+
+[📄Full Paper](coming soon){.card-link}
+
+---
+
+## Neuropathological Consequences of Emerging Viral Pathogens in East Africa
+
+::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}
+<span class="skill-badge wet">Institute for Global Excellence Conference</span>
+<span class="skill-badge soft">2026</span>
+
+:::
+
+### Overview
+
+This review examined current evidence regarding the neuropathological effects of emerging viral diseases affecting East African populations, with particular attention to mechanisms of central nervous system injury, neuroinflammation, and long-term neurological sequelae.
+
+The review synthesised findings from studies involving viral pathogens associated with neurological complications, including emerging infectious diseases capable of crossing the blood-brain barrier and inducing direct or indirect damage to neural tissues.
+
+**Key Themes**
+- Neuroinflammation as a common mechanism of neurological injury.
+- Blood-brain barrier disruption during viral infection.
+- Direct viral invasion of neural tissue.
+- Long-term neurological and cognitive sequelae following infection.
+- Challenges in surveillance, diagnosis, and management within resource-limited settings.
+
+**Significance**
+
+- The review highlights the need to expand infectious disease research beyond acute clinical outcomes and consider the long-term neurological burden associated with emerging pathogens.
+
+- By focusing on East Africa, the paper emphasizes regional research gaps and underscores the importance of strengthening neurological surveillance, research capacity, and healthcare preparedness for future outbreaks.
+
+
+---
+
+
+::: {.contact-strip}
+### Interested in collaborating on health policy research?
+<p>Particularly interested in connecting with researchers and institutions working on African health equity, clinical trial design, and access to emerging therapies</p>
+<a href="mailto:gachemacarol@gmail.com" class="contact-link">Get in touch →</a>
+:::

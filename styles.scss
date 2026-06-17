@@ -1,0 +1,498 @@
+/*-- scss:defaults --*/
+
+// ── Colour palette ────────────────────────────────────────────────────────────
+$navy:        #1B3A5C;
+$coral:       #E05A4E;
+$teal:        #0E9F9F;
+$amber:       #F39C12;
+$light-bg:    #F7F8FA;
+$white:       #FFFFFF;
+$text-dark:   #2D3436;
+$text-muted:  #6C757D;
+
+// ── Bootstrap overrides ───────────────────────────────────────────────────────
+$primary:                 $navy;
+$secondary:               $teal;
+$danger:                  $coral;
+$warning:                 $amber;
+
+$body-bg:                 $light-bg;
+$body-color:              $text-dark;
+
+$font-family-sans-serif:  "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+$headings-font-family:    "Inter", sans-serif;
+$headings-font-weight:    700;
+$headings-color:          $navy;
+
+$link-color:              $teal;
+$link-hover-color:        darken($teal, 12%);
+
+$border-radius:           0.6rem;
+$border-radius-lg:        1rem;
+
+$navbar-bg:               $navy;
+$navbar-fg:               rgba(255, 255, 255, 0.92);
+
+$card-border-width:       0;
+$card-box-shadow:         0 4px 24px rgba(27, 58, 92, 0.10);
+
+/*-- scss:rules --*/
+
+// ── Base ──────────────────────────────────────────────────────────────────────
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.02em;
+}
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+.navbar {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  box-shadow: 0 2px 12px rgba(27, 58, 92, 0.15);
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    font-size: 0.93rem;
+    letter-spacing: 0.01em;
+    opacity: 0.88;
+    transition: opacity 0.15s;
+
+    &:hover { opacity: 1; }
+  }
+}
+
+// ── Hero section ─────────────────────────────────────────────────────────────
+.hero-section {
+  background:    linear-gradient(135deg, #1B3A5C 0%, #0D2137 55%, #1a3355 100%);
+  color:         white;
+  padding:       5.5rem 1.5rem 4.5rem;
+  text-align:    center;
+  position:      relative;
+  overflow:      hidden;
+
+  // decorative radial glow
+  &::before {
+    content:       '';
+    position:      absolute;
+    top:           -40%;
+    right:         -8%;
+    width:         560px;
+    height:        560px;
+    background:    radial-gradient(circle, rgba(224,90,78,0.18) 0%, transparent 68%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  &::after {
+    content:       '';
+    position:      absolute;
+    bottom:        -30%;
+    left:          -5%;
+    width:         400px;
+    height:        400px;
+    background:    radial-gradient(circle, rgba(14,159,159,0.12) 0%, transparent 68%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+.hero-name {
+  font-family:   "DM Serif Display", serif;
+  font-size:     clamp(2.2rem, 5vw, 3.5rem);
+  font-weight:   400;
+  margin-bottom: 0.4rem;
+  line-height:   1.15;
+  position:      relative;
+  z-index:       1;
+}
+
+.hero-subtitle {
+  font-size:     clamp(1rem, 2.5vw, 1.2rem);
+  font-weight:   300;
+  opacity:       0.88;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+  position:      relative;
+  z-index:       1;
+}
+
+.hero-location {
+  font-size:     0.95rem;
+  opacity:       0.65;
+  margin-bottom: 2rem;
+  position:      relative;
+  z-index:       1;
+}
+
+.hero-buttons {
+  display:       flex;
+  gap:           1rem;
+  justify-content: center;
+  flex-wrap:     wrap;
+  position:      relative;
+  z-index:       1;
+
+  .btn-hero-primary {
+    background:    $coral;
+    border:        none;
+    color:         white;
+    padding:       0.7rem 1.8rem;
+    border-radius: 2rem;
+    font-weight:   600;
+    font-size:     0.95rem;
+    text-decoration: none;
+    transition:    transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform:   translateY(-2px);
+      box-shadow:  0 6px 20px rgba(224,90,78,0.4);
+      color:       white;
+    }
+  }
+
+  .btn-hero-outline {
+    background:    transparent;
+    border:        2px solid rgba(255,255,255,0.55);
+    color:         white;
+    padding:       0.7rem 1.8rem;
+    border-radius: 2rem;
+    font-weight:   500;
+    font-size:     0.95rem;
+    text-decoration: none;
+    transition:    border-color 0.2s, background 0.2s;
+
+    &:hover {
+      border-color: white;
+      background:   rgba(255,255,255,0.08);
+      color:        white;
+    }
+  }
+}
+
+// ── Stat boxes ────────────────────────────────────────────────────────────────
+.stats-row {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap:                   1.25rem;
+  margin:                -2rem auto 3rem;
+  max-width:             860px;
+  padding:               0 1.5rem;
+  position:              relative;
+  z-index:               10;
+}
+
+.stat-box {
+  background:    white;
+  border-radius: $border-radius-lg;
+  padding:       1.4rem 1rem;
+  text-align:    center;
+  box-shadow:    0 6px 28px rgba(27,58,92,0.10);
+
+  .stat-number {
+    font-size:   2rem;
+    font-weight: 800;
+    color:       $navy;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size:   0.8rem;
+    color:       $text-muted;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+// ── Section headers ───────────────────────────────────────────────────────────
+.section-header {
+  text-align:    center;
+  margin-bottom: 2.5rem;
+
+  h2 {
+    font-size:     2rem;
+    font-weight:   800;
+    color:         $navy;
+    margin-bottom: 0.5rem;
+    display:       inline-block;
+    position:      relative;
+
+    &::after {
+      content:       '';
+      display:       block;
+      width:         50px;
+      height:        4px;
+      background:    $coral;
+      border-radius: 2px;
+      margin:        0.4rem auto 0;
+    }
+  }
+
+  p {
+    color:         $text-muted;
+    font-size:     1.05rem;
+    max-width:     560px;
+    margin:        0 auto;
+  }
+}
+
+// ── About section ─────────────────────────────────────────────────────────────
+.about-photo {
+  width:         200px;
+  height:        200px;
+  border-radius: 50%;
+  object-fit:    cover;
+  border:        5px solid white;
+  box-shadow:    0 8px 32px rgba(27,58,92,0.16);
+  display:       block;
+  margin:        0 auto 1.5rem;
+}
+
+// ── Skill badges ──────────────────────────────────────────────────────────────
+.skills-group {
+  margin-bottom: 1.2rem;
+
+  .skills-label {
+    font-size:     0.78rem;
+    font-weight:   700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color:         $text-muted;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.skill-badge {
+  display:         inline-block;
+  padding:         0.3rem 0.85rem;
+  border-radius:   2rem;
+  font-size:       0.82rem;
+  font-weight:     600;
+  margin:          0.2rem 0.2rem 0.2rem 0;
+
+  &.bio  { background: rgba(14,159,159,0.12);  color: darken($teal,10%); }
+  &.ml   { background: rgba(224,90,78,0.10);   color: darken($coral,10%); }
+  &.wet  { background: rgba(243,156,18,0.12);  color: darken($amber,15%); }
+  &.soft { background: rgba(27,58,92,0.08);    color: $navy; }
+}
+
+// ── Project cards ─────────────────────────────────────────────────────────────
+.project-card {
+  background:    white;
+  border-radius: $border-radius-lg;
+  box-shadow:    0 4px 20px rgba(27,58,92,0.08);
+  overflow:      hidden;
+  transition:    transform 0.22s ease, box-shadow 0.22s ease;
+  height:        100%;
+  display:       flex;
+  flex-direction: column;
+
+  &:hover {
+    transform:   translateY(-5px);
+    box-shadow:  0 12px 36px rgba(27,58,92,0.16);
+  }
+
+  .card-accent {
+    height:      5px;
+    width:       100%;
+  }
+
+  .card-body {
+    padding:     1.6rem;
+    flex-grow:   1;
+    display:     flex;
+    flex-direction: column;
+  }
+
+  .card-category {
+    font-size:   0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-title {
+    font-size:   1.1rem;
+    font-weight: 700;
+    color:       $navy;
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+  }
+
+  .card-text {
+    font-size:   0.91rem;
+    color:       $text-muted;
+    flex-grow:   1;
+    line-height: 1.65;
+  }
+
+  .card-tools {
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tool-tag {
+    display:     inline-block;
+    background:  $light-bg;
+    color:       $navy;
+    font-size:   0.73rem;
+    font-weight: 600;
+    padding:     0.2rem 0.6rem;
+    border-radius: 0.3rem;
+    margin:      0.15rem 0.15rem 0.15rem 0;
+  }
+
+  .card-link {
+    font-size:   0.88rem;
+    font-weight: 600;
+    color:       $teal;
+    text-decoration: none;
+    margin-top:  auto;
+    display:     inline-flex;
+    align-items: center;
+    gap:         0.25rem;
+    transition:  gap 0.15s;
+
+    &:hover { gap: 0.5rem; color: darken($teal,10%); }
+  }
+}
+
+// ── Page sections ─────────────────────────────────────────────────────────────
+.content-section {
+  padding:       4rem 0;
+
+  &.bg-light-subtle { background: rgba(247,248,250,0.8); }
+}
+
+// ── Figure captions ───────────────────────────────────────────────────────────
+.figure-caption, figcaption {
+  font-size:     0.83rem;
+  color:         $text-muted;
+  text-align:    center;
+  margin-top:    0.5rem;
+  font-style:    italic;
+}
+
+// ── Callout overrides ─────────────────────────────────────────────────────────
+.callout {
+  border-radius: $border-radius;
+  border-left-width: 4px;
+}
+
+// ── Timeline (CV page) ────────────────────────────────────────────────────────
+.timeline {
+  position:      relative;
+  padding-left:  2rem;
+
+  &::before {
+    content:     '';
+    position:    absolute;
+    left:        0.45rem;
+    top:         0.5rem;
+    bottom:      0;
+    width:       2px;
+    background:  linear-gradient($teal, rgba($teal, 0.1));
+    border-radius: 1px;
+  }
+}
+
+.timeline-item {
+  position:      relative;
+  margin-bottom: 2rem;
+
+  &::before {
+    content:     '';
+    position:    absolute;
+    left:        -1.62rem;
+    top:         0.4rem;
+    width:       12px;
+    height:      12px;
+    background:  $coral;
+    border:      2.5px solid white;
+    border-radius: 50%;
+    box-shadow:  0 0 0 2px $coral;
+  }
+}
+
+.timeline-date {
+  font-size:     0.8rem;
+  font-weight:   700;
+  color:         $teal;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-title {
+  font-size:     1rem;
+  font-weight:   700;
+  color:         $navy;
+  margin-bottom: 0.1rem;
+}
+
+.timeline-org {
+  font-size:     0.88rem;
+  color:         $text-muted;
+  margin-bottom: 0.4rem;
+  font-style:    italic;
+}
+
+.timeline-body {
+  font-size:     0.9rem;
+  color:         $text-dark;
+  line-height:   1.6;
+}
+
+// ── Contact strip ─────────────────────────────────────────────────────────────
+.contact-strip {
+  background:    $navy;
+  color:         white;
+  padding:       3rem 1.5rem;
+  text-align:    center;
+  border-radius: $border-radius-lg;
+  margin:        2rem 0;
+
+  h3 { color: white; margin-bottom: 0.4rem; }
+
+  p  { opacity: 0.75; margin-bottom: 1.5rem; }
+}
+
+.contact-link {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             0.5rem;
+  background:      rgba(255,255,255,0.1);
+  border:          1px solid rgba(255,255,255,0.25);
+  color:           white;
+  padding:         0.55rem 1.2rem;
+  border-radius:   2rem;
+  font-size:       0.9rem;
+  font-weight:     500;
+  text-decoration: none;
+  margin:          0.3rem;
+  transition:      background 0.2s;
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+    color:      white;
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 768px) {
+  .hero-section { padding: 4rem 1rem 3rem; }
+  .stats-row    { margin-top: -1rem; }
+  .stat-box .stat-number { font-size: 1.6rem; }
+}

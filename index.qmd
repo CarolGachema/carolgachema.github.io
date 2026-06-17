@@ -1,0 +1,217 @@
+---
+title: "Caroline Gachema"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<!-- ══ HERO ══════════════════════════════════════════════════════════════════ -->
+<section class="hero-section">
+  <p class="hero-name">Caroline Wambui Gachema</p>
+  <p class="hero-subtitle">Biomedical Scientist &nbsp;·&nbsp; Bioinformatician &nbsp;·&nbsp; Global Health Researcher</p>
+  <p class="hero-location">📍 Nairobi, Kenya</p>
+  <div class="hero-buttons">
+    <a href="research.qmd" class="btn-hero-primary">View Research</a>
+    <a href="projects.qmd" class="btn-hero-outline">Explore Projects</a>
+  </div>
+</section>
+
+<!-- ══ STAT BOXES ════════════════════════════════════════════════════════════ -->
+<div class="stats-row">
+  <div class="stat-box">
+    <div class="stat-number">1,832</div>
+    <div class="stat-label">Samples Analysed</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">5+</div>
+    <div class="stat-label">Computational Projects</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Ongoing Research Papers</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">BSL-3</div>
+    <div class="stat-label">Wet Lab Certified</div>
+  </div>
+</div>
+```
+
+::: {.content-section}
+::: {.container style="max-width:860px; margin:0 auto;"}
+
+## About Me {.section-header style="text-align:center; margin-bottom:1.5rem;"}
+
+```{=html}
+<div style="display:flex; gap:2.5rem; align-items:flex-start; flex-wrap:wrap;">
+  <div style="flex-shrink:0; text-align:center;">
+    <img src="images/profile.jpg"
+         class="about-photo"
+         alt="Caroline Wambui Gachema"
+         onerror="this.style.display='none'">
+  </div>
+  <div style="flex:1; min-width:260px;">
+```
+
+My work sits at the intersection of molecular biology, bioinformatics and global health policy. Combining hands on laboratory experience with computational analysis to generate rigorous, reproducible results. 
+
+I am curious about the questions that sit on the edge of what we know, and how data can be made to serve the people it describes
+
+```{=html}
+  </div>
+</div>
+```
+
+:::
+:::
+
+::: {.content-section .bg-light-subtle}
+::: {.container style="max-width:860px; margin:0 auto;"}
+
+::: {.section-header}
+## Skills & Tools
+:::
+
+::: {.skills-group}
+<div class="skills-label">Bioinformatics & Genomics</div>
+<span class="skill-badge bio">R</span>
+<span class="skill-badge bio">Python</span>
+<span class="skill-badge bio">DESeq2</span>
+<span class="skill-badge bio">clusterProfiler</span>
+<span class="skill-badge bio">GSEA</span>
+<span class="skill-badge bio">Survival Analysis</span>
+<span class="skill-badge bio">ggplot2</span>
+<span class="skill-badge bio">TCGA Data</span>
+<span class="skill-badge bio">UCSC Xena</span>
+:::
+
+::: {.skills-group}
+<div class="skills-label">Machine Learning & Data Science</div>
+<span class="skill-badge ml">Random Forest</span>
+<span class="skill-badge ml">scikit-learn</span>
+<span class="skill-badge ml">Cross-validation</span>
+<span class="skill-badge ml">Feature Engineering</span>
+<span class="skill-badge ml">Data Wrangling</span>
+:::
+
+::: {.skills-group}
+<div class="skills-label">Wet Lab & Clinical</div>
+<span class="skill-badge wet">GeneXpert MTB/RIF</span>
+<span class="skill-badge wet">BSL-3 Biosafety</span>
+<span class="skill-badge wet">Phlebotomy</span>
+<span class="skill-badge wet">ELISA</span>
+<span class="skill-badge wet">GC-MS</span>
+<span class="skill-badge wet">PCR</span>
+<span class="skill-badge wet">Cell Culture</span>
+:::
+
+::: {.skills-group}
+<div class="skills-label">Research & Communication</div>
+<span class="skill-badge soft">Scientific Writing</span>
+<span class="skill-badge soft">Policy Analysis</span>
+<span class="skill-badge soft">GitHub</span>
+<span class="skill-badge soft">Quarto</span>
+:::
+
+:::
+:::
+
+::: {.content-section}
+::: {.container style="max-width:960px; margin:0 auto;"}
+
+::: {.section-header}
+## Featured Work
+<p>A selection of projects across research, computation, and policy</p>
+:::
+
+```{=html}
+<div class="row g-4">
+
+  <!-- Card 1: TCGA PDAC -->
+  <div class="col-md-4">
+    <div class="project-card">
+      <div class="card-accent" style="background: linear-gradient(90deg, #1B3A5C, #0E9F9F);"></div>
+      <div class="card-body">
+        <div class="card-category" style="color:#0E9F9F;">Translational Oncology</div>
+        <div class="card-title">Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy</div>
+        <div class="card-text">
+          Cross-disciplinary analysis connecting psilocybin neuroplasticity (TrkB)
+          with perineural invasion in pancreatic cancer (TrkA) — with TCGA-PAAD
+          validation across 182 tumour samples.
+        </div>
+        <div class="card-tools">
+          <span class="tool-tag">R</span>
+          <span class="tool-tag">GSEA</span>
+          <span class="tool-tag">Survival Analysis</span>
+          <span class="tool-tag">TCGA</span>
+        </div>
+        <a href="research.qmd" class="card-link">Read more →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2: Alzheimer's ML -->
+  <div class="col-md-4">
+    <div class="project-card">
+      <div class="card-accent" style="background: linear-gradient(90deg, #E05A4E, #F39C12);"></div>
+      <div class="card-body">
+        <div class="card-category" style="color:#E05A4E;">Machine Learning</div>
+        <div class="card-title">Machine Learning Framework for Alzheimer’s Detection</div>
+        <div class="card-text">
+          Engineered a Random Forest classifier trained on ADNI dataset features achieving
+          90.7% cross-validation accuracy in distinguishing Alzheimer's
+          disease from cognitively normal controls.
+        </div>
+        <div class="card-tools">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">scikit-learn</span>
+          <span class="tool-tag">Random Forest</span>
+          <span class="tool-tag">ADNI</span>
+        </div>
+        <a href="projects.qmd#alzheimers" class="card-link">View project →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3: HIV Policy -->
+  <div class="col-md-4">
+    <div class="project-card">
+      <div class="card-accent" style="background: linear-gradient(90deg, #F39C12, #E05A4E);"></div>
+      <div class="card-body">
+        <div class="card-category" style="color:#F39C12;">Health Policy</div>
+        <div class="card-title">Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa</div>
+        <div class="card-text">
+          Literature synthesis and population-genetics analysis examining the global distribution of CCR5Δ32 and its implications for HIV cure equity 
+          to the WHO on equitable trial design.
+        </div>
+        <div class="card-tools">
+          <span class="tool-tag">Policy Analysis</span>
+          <span class="tool-tag">AfricArXiv</span>
+          <span class="tool-tag">WHO</span>
+        </div>
+        <a href="policy.qmd" class="card-link">Read paper →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+
+:::
+:::
+
+::: {.content-section .bg-light-subtle}
+::: {.container style="max-width:760px; margin:0 auto;"}
+
+```{=html}
+<div class="contact-strip">
+  <h3>Let's connect</h3>
+  <p>Open to research collaborations,</p>
+  <a href="mailto:gachemacarol@gmail.com" class="contact-link">✉ gachemacarol@gmail.com</a>
+  <a href="https://github.com/CarolGachema" class="contact-link">GitHub</a>
+  <a href="https://linkedin.com/in/[https://www.linkedin.com/in/caroline-gachema-67181a2b8/]" class="contact-link">LinkedIn</a>
+</div>
+```
+
+:::
+:::

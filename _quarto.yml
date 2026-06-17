@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Caroline Wambui Gachema"
+  site-url: "https://carolinegachema.github.io"
+  description: "Biomedical Scientist · Bioinformatician · Global Health Researcher, Nairobi"
+
+  navbar:
+    background: "#1B3A5C"
+    foreground: "white"
+    title: "Caroline Gachema"
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: policy.qmd
+        text: Policy Work
+      
+    right:
+      - icon: github
+        href: https://github.com/CarolGachema
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/https://www.linkedin.com/in/caroline-gachema-67181a2b8/
+        aria-label: LinkedIn
+      - icon: envelope-fill
+        href: mailto:gachemacarol@gmail.com
+        aria-label: Email
+
+  page-footer:
+    background: "#1B3A5C"
+    foreground: "rgba(255,255,255,0.75)"
+    left: "© 2026 Caroline · Nairobi, Kenya"
+    right:
+      - text: "Built with Quarto"
+        href: "https://quarto.org"
+
+  open-graph:
+    title: "Caroline Wambui Gachema"
+    description: "Biomedical Scientist · Bioinformatician · Global Health Researcher"
+
+format:
+  html:
+    theme: [flatly, styles.scss]
+    toc: false
+    smooth-scroll: true
+    highlight-style: github
+    code-fold: true
+    code-tools: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  message: false

@@ -1,0 +1,203 @@
+---
+title: "Projects"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div style="background: linear-gradient(135deg, #1B3A5C, #0D2137); color:white; padding:3rem 1.5rem 2rem; text-align:center; margin-bottom:3rem;">
+  <h1 style="font-family:'DM Serif Display',serif; font-size:2.4rem; font-weight:400; margin-bottom:0.4rem;">Projects</h1>
+  <p style="opacity:0.75; font-size:1.05rem; margin:0;">Computational biology · Machine learning · Signal analysis</p>
+</div>
+```
+
+::: {.container style="max-width:980px; margin:0 auto; padding:0 1.5rem;"}
+
+---
+
+## Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy {#tcga}
+
+::: {.project-card style="padding:0; margin-bottom:2.5rem;"}
+::: {.card-body style="padding:2rem;"}
+
+::: {style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;"}
+<div>
+<span class="skill-badge bio" style="margin-bottom:0.5rem; display:inline-block;">Translational Oncology</span>  
+<span class="skill-badge bio">Bioinformatics</span>
+</div>
+<div style="font-size:0.83rem; color:#6C757D;">2026 · TCGA-PAAD </div>
+:::
+
+**Overview**
+
+Pancreatic ductal adenocarcinoma (PDAC) is highly aggressive and increasingly recognized to interact with the nervous system. Neurotrophin receptors such as NTRK1 and NTRK2 may influence tumour progression, yet their expression patterns in PDAC remain incompletely characterised.
+
+TCGA-PAAD transcriptomic and survival data were analysed to investigate neurotrophin receptor expression, co-expression patterns, and clinical relevance.
+
+**Key Findings:***
+
+- Confirmed expression of both *NTRK1* and *NTRK2* across PDAC tumours
+- Demonstrated significant co-expression (Spearman ρ = 0.416, p < 0.001)
+- Showed MAPK and PI3K-Akt signalling pathways are significantly enriched in the NTRK2 co-expression network
+- Provided survival analysis by expression group
+
+```{=html}
+<div class="row g-3 my-3">
+  <div class="col-md-6">
+    <img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure1_expression_distribution.png"
+         class="img-fluid rounded" alt="NTRK1 and NTRK2 expression distributions"
+         style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+    <p class="figure-caption">Fig 1. NTRK1 and NTRK2 expression across 182 PDAC tumour samples</p>
+  </div>
+  <div class="col-md-6">
+    <img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure2_coexpression_scatter.png"
+         class="img-fluid rounded" alt="NTRK1 vs NTRK2 co-expression"
+         style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+    <p class="figure-caption">Fig 2. Significant co-expression (ρ = 0.416, p < 0.001)</p>
+  </div>
+</div>
+```
+
+> **Key tools:** R · clusterProfiler · survival · survminer · ggplot2 · UCSC Xena · TCGA
+
+[View GitHub Repository →](https://github.com/CarolGachema/TCGA-PAAD-NTRK){.card-link}
+&nbsp;&nbsp;
+[READ MORE →](research.qmd){.card-link}
+
+:::
+:::
+
+---
+
+## Alzheimer's Disease Machine Learning Classifier {#alzheimers}
+
+::: {.project-card style="padding:0; margin-bottom:2.5rem;"}
+::: {.card-body style="padding:2rem;"}
+
+::: {style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;"}
+<div>
+<span class="skill-badge ml" style="margin-bottom:0.5rem; display:inline-block;">Machine Learning</span>
+<span class="skill-badge ml">Neurodegeneration</span>
+</div>
+<div style="font-size:0.83rem; color:#6C757D;">2026 · ADNI Dataset</div>
+:::
+
+**Overview**
+
+Alzheimer's disease is the most common neurodegenerative disorder worldwide, yet its molecular mechanisms remain incompletely understood. This project aimed to identify key genes associated with Alzheimer's disease and investigate whether gene expression signatures could be used to accurately classify disease status.
+
+
+To evaluate the predictive potential of these genes, I developed multiple machine learning models in Python, including Random Forest, Support Vector Machine, Logistic Regression, and Gradient Boosting classifiers. Random Forest emerged as the best-performing model, achieving a cross-validation accuracy of 90.7%, test accuracy of 87.9%, and ROC-AUC of 0.9038.
+
+```{=html}
+<div class="row g-3 my-3">
+  <div class="col-md-6">
+    <img src="https://github.com/CarolGachema/Alhzeimer-Hub-Genes-ML/blob/main/figures/network_plot_AD.png"
+         class="img-fluid rounded" alt="Top 50 Hub Genes in Alzheimers Disease"
+         style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+    <p class="figure-caption">Fig 1. Top 50 Hub Genes in Alzheimers Disease</p>
+  </div>
+  <div class="col-md-6">
+    <img src="https://github.com/CarolGachema/Alhzeimer-Hub-Genes-ML/blob/main/figures/model_comparison.png"
+         class="img-fluid rounded" alt="ML Model Comparison"
+         style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+    <p class="figure-caption">Fig 2. ML Model Comparison</p>
+  </div>
+</div>
+```
+> **Key tools:** Python · scikit-learn · pandas · numpy · matplotlib · ADNI
+
+[View GitHub Repository →](https://github.com/CarolGachema/Alzheimers-ML-Classifier){.card-link}
+
+:::
+:::
+
+---
+
+## Differential Gene Expression Pipelines {#deg}
+
+::: {.project-card style="padding:0; margin-bottom:2.5rem;"}
+::: {.card-body style="padding:2rem;"}
+
+::: {style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;"}
+<div>
+<span class="skill-badge bio" style="margin-bottom:0.5rem; display:inline-block;">Genomics</span>
+<span class="skill-badge bio">DEG Analysis</span>
+</div>
+<div style="font-size:0.83rem; color:#6C757D;">2025-2026</div>
+:::
+
+**DEG analysis pipelines for two disease contexts: lung cancer and asthma.**
+
+Both pipelines follow a reproducible workflow from raw count data through to biological interpretation:
+
+**Lung Cancer Pipeline**
+- Identified a set of significantly dysregulated genes associated with lung tumour biology.
+- Generated reproducible analytical pipelines for transcriptomic biomarker discovery.
+- Demonstrated the utility of publicly available genomic datasets for cancer research.
+- **Significance** The identification of differentially expressed genes may contribute to future biomarker discovery efforts and improve understanding of molecular pathways involved in lung cancer development and progression.
+
+**Asthma Pipeline**
+- Identified genes significantly altered following corticosteroid treatment.
+- Generated functional enrichment profiles highlighting biological processes affected by therapy.
+- Developed a fully reproducible transcriptomic workflow for asthma treatment response analysis.
+- **Significance** Understanding molecular signatures associated with treatment response may contribute to personalised app
+
+Both pipelines are fully documented and reproducible in R.
+
+> **Key tools:** R · DESeq2 · clusterProfiler · ggplot2 · pheatmap · GEO
+
+[View GitHub Repository →](https://github.com/CarolGachema/Lung-Cancer-Analysis){.card-link}
+
+:::
+:::
+
+---
+
+## Intersystem Noise Coupling {#noise}
+
+::: {.project-card style="padding:0; margin-bottom:2.5rem;"}
+::: {.card-body style="padding:2rem;"}
+
+::: {style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;"}
+<div>
+<span class="skill-badge wet" style="margin-bottom:0.5rem; display:inline-block;">Signal Analysis</span>
+<span class="skill-badge ml">Instrumentation</span>
+</div>
+<div style="font-size:0.83rem; color:#6C757D; font-style:italic;">2026</div>
+:::
+
+**Overview**
+This project proposes a novel computational framework called Intersystem Noise Coupling, which investigates whether biological "noise" — the small fluctuations and variability present within physiological signals — may act as a mechanism of coordination between organ systems.
+
+Rather than treating physiological noise as unwanted randomness, the framework explores the possibility that stochastic fluctuations carry meaningful information capable of synchronizing activity across multiple organs.
+
+
+The project aims to utilise large-scale physiological datasets, including MIMIC-IV, to analyse time-series signals from multiple organ systems simultaneously.
+
+**Approaches**
+
+- Stochastic modelling
+- Cross-correlation analysis
+- Time-series decomposition
+- Network dynamics
+- Physiological synchronization metrics
+- Noise propagation modelling
+
+
+> **Key tools:** Python · scikit-learn · pandas · numpy · matplotlib · ADNI
+
+[View GitHub Repository →](https://github.com/CarolGachema/Intersystem-Noise-Coupling){.card-link}
+
+:::
+:::
+
+---
+
+::: {.contact-strip}
+### Working on something interesting?
+<p>Open to joint publications and research conversations</p>
+<a href="mailto:gachemacarol@gmail.com" class="contact-link">Get in touch →</a>
+:::
+
+:::
