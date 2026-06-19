@@ -115,7 +115,7 @@ GSEA-KEGG analysis, with genes ranked by Spearman correlation with *NTRK2* expre
 The paper is a structural and bio-ethical critique of the current global HIV cure paradigm. It argues that while the scientific community celebrates allogeneic hematopoietic stem cell transplantation (allo-HSCT) as a landmark proof of concept, this “cure” is a biological and logistical illusion for Sub-Saharan Africa (SSA), the region that bears over two-thirds of the global HIV burden. The core thesis is that the cure is built on an accidental, Euro centric genetic framework that completely excludes, underfunds, and ignores the populations that need a HIV cure the most
 
 ### The Problem
-1.**Complete Absence of the Allele** - The cure relies entirely on a donor possessing the homozygous CCR5Δ32 genetic mutation, which stops HIV from entering host cells.
+1. **Complete Absence of the Allele** - The cure relies entirely on a donor possessing the homozygous CCR5Δ32 genetic mutation, which stops HIV from entering host cells.
 - While this mutation exists in about 1% of Northern Europeans, large-scale genomic data shows its frequency is precisely 0% in studied populations across Angola, Nigeria, Zimbabwe, and Ethiopia.The HLA Matching Compound Problem:
 - Because successful transplants require strict Human Leukocyte Antigen (HLA) tissue matching to prevent fatal graft-versus-host disease, an African patient cannot simply use a European donor.
 

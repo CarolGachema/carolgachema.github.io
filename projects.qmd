@@ -41,7 +41,7 @@ Pancreatic ductal adenocarcinoma (PDAC) is highly aggressive and increasingly re
 
 TCGA-PAAD transcriptomic and survival data were analysed to investigate neurotrophin receptor expression, co-expression patterns, and clinical relevance.
 
-**Key Findings:***
+**Key Findings:**
 
 - Confirmed expression of both *NTRK1* and *NTRK2* across PDAC tumours
 - Demonstrated significant co-expression (Spearman ρ = 0.416, p < 0.001)
