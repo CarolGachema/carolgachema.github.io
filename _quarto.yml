@@ -4,13 +4,14 @@ project:
 
 website:
   title: "Caroline Wambui Gachema"
-  site-url: "https://carolinegachema.github.io"
-  description: "Biomedical Scientist · Bioinformatician · Global Health Researcher, Nairobi"
+  site-url: "https://carolgachema.github.io"
+  description: "Biomedical Scientist · Bioinformatician · Global Health Researcher"
 
   navbar:
     background: "#1B3A5C"
     foreground: "white"
-    title: "Caroline Gachema"
+    logo: images/profile.jpg.png # 👈 Fixed the file extension here
+    title: false             # 👈 This completely hides the plain text name next to the photo
     pinned: true
     left:
       - href: index.qmd
@@ -19,15 +20,12 @@ website:
         text: Research
       - href: projects.qmd
         text: Projects
-      - href: policy.qmd
-        text: Policy Work
-      
     right:
       - icon: github
         href: https://github.com/CarolGachema
         aria-label: GitHub
       - icon: linkedin
-        href: https://linkedin.com/in/https://www.linkedin.com/in/caroline-gachema-67181a2b8/
+        href: https://www.linkedin.com/in/caroline-gachema-67181a2b8/
         aria-label: LinkedIn
       - icon: envelope-fill
         href: mailto:gachemacarol@gmail.com
@@ -36,7 +34,7 @@ website:
   page-footer:
     background: "#1B3A5C"
     foreground: "rgba(255,255,255,0.75)"
-    left: "© 2026 Caroline · Nairobi, Kenya"
+    left: "© 2026 Gachema · Nairobi, Kenya"
     right:
       - text: "Built with Quarto"
         href: "https://quarto.org"
@@ -51,8 +49,6 @@ format:
     toc: false
     smooth-scroll: true
     highlight-style: github
-    code-fold: true
-    code-tools: true
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,6 +57,6 @@ format:
 
 execute:
   freeze: auto
-  echo: true
+  echo: false
   warning: false
   message: false

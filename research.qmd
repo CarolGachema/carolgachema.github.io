@@ -3,26 +3,31 @@ title: "Research"
 page-layout: article
 toc: true
 toc-depth: 3
+title-block-style: none
 ---
 
+<style>
+#title-block-header {
+  display: none;
+}
+</style>
+
 ```{=html}
-<div style="background:linear-gradient(135deg,#1B3A5C,#0D2137);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;">
+<div style="background:linear-gradient(135deg,#F39C12,#E05A4E);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;">
   <h1 style="font-family:'DM Serif Display',serif;font-size:2.2rem;font-weight:400;margin-bottom:0.4rem;">Research</h1>
-  <p style="opacity:0.72;font-size:1rem;margin:0;">Convergent biology · Translational oncology · Neuro-tumour interface</p>
+  <p style="opacity:0.88;font-size:1rem;margin:0;">Convergent biology · Translational oncology · Health equity</p>
 </div>
 ```
 
-## Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy
+## Psychedelic Neuroplasticity and the Neurotrophic Architecture of Pancreatic Cancer (Convergent Pathways) {#pdac}
 
 ::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}
-<span class="skill-badge bio">Preprint — AfricArXiv</span>
-<span class="skill-badge ml">In Submission · 2026</span>
-<span class="skill-badge soft">Caroline Wambui Gachema</span>
+<span class="skill-badge ml">In Progress · 2026</span>
 :::
 
-### Abstract
+### Overview
 
-Psilocybin-assisted therapy is entering oncology settings at scale: clinical trials now enrol patients with cancer-related psychological distress, and advancing Phase 3 data for treatment-resistant depression have accelerated its broader integration into cancer care. Its therapeutic mechanism has been substantially reframed by Moliner, who demonstrated that psilocin (the active metabolite of psilocybin) directly binds the TrkB receptor as a positive allosteric modulator, positioning neurotrophin signalling as the primary driver of psychedelic-induced neuroplasticity.
+Psilocybin-assisted therapy is entering oncology settings at scale: clinical trials now enrol patients with cancer-related psychological distress, and advancing Phase 3 data for treatment-resistant depression have accelerated its broader integration into cancer care. Its therapeutic mechanism has been substantially reframed by Moliner *et al.* (2023), who demonstrated that psilocin, the active metabolite of psilocybin, directly binds the TrkB receptor as a positive allosteric modulator, positioning neurotrophin signalling as the primary driver of psychedelic-induced neuroplasticity.
 
 Concurrently, pancreatic ductal adenocarcinoma (PDAC), a malignancy with near-universal perineural invasion (PNI) and a 12-month median survival post-diagnosis, is driven at the neural interface by nerve growth factor (NGF) signalling through TrkA, TrkB's closest structural paralogue, sharing approximately 60% intracellular kinase domain identity and activating identical downstream effectors: MAPK/ERK, PI3K/Akt, and PLCγ. Critically, TrkB is also overexpressed in PDAC tumour cells, where it promotes epithelial-mesenchymal transition and anoikis resistance.
 
@@ -50,7 +55,7 @@ Both neurotrophin receptors are expressed across the full PDAC cohort, with *NTR
 
 #### Co-expression of NTRK1 and NTRK2
 
-A significant positive correlation exists between *NTRK1* and *NTRK2* expression across PDAC tumors (Spearman ρ = 0.416, p < 0.001). This co-expression pattern establishes that both receptors are simultaneously active within the same tumor microenvironmental context - a prerequisite for the cross-talk the paper proposes.
+A significant positive correlation exists between *NTRK1* and *NTRK2* expression across PDAC tumours (Spearman ρ = 0.416, p < 0.001). This co-expression pattern establishes that both receptors are simultaneously active within the same tumour microenvironmental context — a prerequisite for the cross-talk the paper proposes.
 
 ```{=html}
 <figure>
@@ -58,17 +63,19 @@ A significant positive correlation exists between *NTRK1* and *NTRK2* expression
      class="img-fluid rounded"
      alt="NTRK1 vs NTRK2 co-expression scatter"
      style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:620px; display:block; margin:1rem auto;">
-<figcaption>Figure 2. NTRK1–NTRK2 co-expression in TCGA-PAAD. Each point represents one tumour sample. Spearman ρ = 0.416, p < 0.001. Labelled samples: top 6 co-expressing tumours.</figcaption>
+<figcaption>Figure 2. NTRK1–NTRK2 co-expression in TCGA-PAAD. Each point represents one tumour sample. Spearman ρ = 0.416, p &lt; 0.001. Labelled samples: top 6 co-expressing tumours.</figcaption>
 </figure>
 ```
 
 #### Survival Analysis
 
-Kaplan-Meier analysis did not demonstrate a statistically significant association between *NTRK2* expression and overall survival at median-split dichotomisation (HR = 0.89, 95% CI 0.59–1.33, log-rank p = 0.57), nor for *NTRK1* (HR = 0.75, 95% CI 0.50–1.13, p = 0.17). This null finding is consistent with the uniformly poor prognosis of PDAC across molecular subtypes and the limited statistical power of n = 182 for detecting moderate gene-level effects. The paper's central argument is mechanistic rather than prognostic.
+Kaplan-Meier analysis did not demonstrate a statistically significant association between *NTRK2* expression and overall survival at median-split dichotomisation (HR = 0.89, 95% CI 0.59–1.33, log-rank p = 0.57), nor for *NTRK1* (HR = 0.75, 95% CI 0.50–1.13, p = 0.17). 
+
+This null finding is consistent with the uniformly poor prognosis of PDAC across molecular subtypes and the limited statistical power of n = 182 for detecting moderate gene-level effects. The paper's central argument is mechanistic rather than prognostic.
 
 #### Pathway Enrichment
 
-GSEA-KEGG analysis, with genes ranked by Spearman correlation with *NTRK2* expression across all TCGA-PAAD samples, identified **MAPK signalling** and **PI3K-Akt signalling** as significantly positively enriched pathways in the NTRK2 co-expression network.
+GSEA-KEGG analysis, with genes ranked by Spearman correlation with *NTRK2* expression across all TCGA-PAAD samples, identified **MAPK signalling** and **PI3K-Akt signalling** as significantly positively enriched pathways in the NTRK2 co-expression network — precisely the downstream effectors shared between TrkA (perineural invasion) and TrkB (psilocin target).
 
 ```{=html}
 <div class="row g-3 my-2">
@@ -91,13 +98,71 @@ GSEA-KEGG analysis, with genes ranked by Spearman correlation with *NTRK2* expre
 </div>
 ```
 
-These pathways are precisely the downstream effectors shared between TrkA (perineural invasion) and TrkB (psilocin target), providing direct empirical support for the molecular convergence hypothesis.
+[📂 View full analysis on GitHub](https://github.com/CarolGachema/TCGA-PAAD-NTRK){.card-link} &nbsp; · &nbsp; Data: [UCSC Xena Browser](https://xenabrowser.net){.card-link}
 
 ---
 
 
-Data: TCGA-PAAD from [UCSC Xena Browser](https://xenabrowser.net)
+## Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa {#hiv}
+
+::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}
+<span class="skill-badge soft">WHO dir</span>
+<span class="skill-badge bio">2026</span>
+:::
+
+### Overview
+
+The paper is a structural and bio-ethical critique of the current global HIV cure paradigm. It argues that while the scientific community celebrates allogeneic hematopoietic stem cell transplantation (allo-HSCT) as a landmark proof of concept, this “cure” is a biological and logistical illusion for Sub-Saharan Africa (SSA), the region that bears over two-thirds of the global HIV burden. The core thesis is that the cure is built on an accidental, Euro centric genetic framework that completely excludes, underfunds, and ignores the populations that need a HIV cure the most
+
+### The Problem
+1.**Complete Absence of the Allele** - The cure relies entirely on a donor possessing the homozygous CCR5Δ32 genetic mutation, which stops HIV from entering host cells.
+- While this mutation exists in about 1% of Northern Europeans, large-scale genomic data shows its frequency is precisely 0% in studied populations across Angola, Nigeria, Zimbabwe, and Ethiopia.The HLA Matching Compound Problem:
+- Because successful transplants require strict Human Leukocyte Antigen (HLA) tissue matching to prevent fatal graft-versus-host disease, an African patient cannot simply use a European donor.
+
+2. **The Cost Wall** - A single allo-HSCT procedure costs between $100,000 and $300,000. The procedure demands specialized sterile bone marrow units, advanced blood banking, high-resolution HLA typing tech, and intensive care units equipped for extreme toxicities. These resources are fundamentally absent or severely constrained in most Sub-Saharan healthcare systems.
+
+3. **The Cancer Requirement** - This procedure has never been a standalone treatment for HIV; it is an incredibly aggressive, last-resort intervention for patients who also have life-threatening blood cancers (like leukemia).
+
+### Key Recommendations
+The paper makes the following recommendations directed at the WHO and trial sponsors:
+
+1. **Commission an SSA** - Focused Cure Agenda: Shift funding to study CCR5-independent remission mechanisms and invest in gene therapies with low-income access guidelines built into the initial trial phases.
+
+2. **Diversify Global Donor Registries** - Launch targeted, well-funded recruitment drives for African, Asian, and Latin American donors to fix the massive European bias in global HLA matching data.
+
+3. **Establish Regional Centers of Excellence** - Fund the construction of at least five regional advanced hematological and gene therapy medical hubs across Sub-Saharan Africa to serve both cure research and broader oncological needs.
+
+4. **Enforce Advance Market Commitments (AMCs)** - Mandate tiered licensing agreements guaranteeing that when a viable, population-agnostic cure is found, it is affordable and accessible to LMICs immediately upon regulatory approval, preventing the multi-decade delay that occurred with early antiretroviral drugs.
 
 ---
 
+## Neuropathological Consequences of Emerging Viral Pathogens in East Africa: {#cns}
 
+::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}
+<span class="skill-badge ml">IGAE Conference · 2026</span>
+:::
+
+### Overview
+Emerging and re-emerging viral diseases pose a growing public health challenge in East Africa, yet much of the scientific focus has centered on acute infection and mortality rather than their long-term effects on the nervous system. 
+This review explores how viral pathogens can affect the central nervous system through mechanisms such as neuroinflammation, blood-brain barrier disruption, immune-mediated injury, and direct viral invasion, resulting in neurological complications that may persist long after the initial infection has resolved.
+
+Drawing on current evidence from the literature, the paper synthesizes the neuropathological mechanisms associated with emerging viral infections and highlights the implications for healthcare systems in East Africa. It identifies critical knowledge gaps in neurological surveillance, diagnosis, and long-term patient management while emphasizing the need for greater investment in neuroscience research within the region. 
+The work reflects my broader interest in understanding disease mechanisms at both the molecular and systems levels, an interest that later informed my computational genomics projects.
+
+###The Problem
+- Limited understanding of the long-term neurological consequences of emerging viral infections in East African populations.
+- Insufficient neurological surveillance and research infrastructure to monitor post-infectious neurological complications.
+- A lack of region-specific evidence to guide clinical management, public health policy, and preparedness for future outbreaks.
+
+### Conference Presentation
+Abstract presented at the **Insitute for Global Academic Excellence Conference, 2026**.
+
+---
+
+```{=html}
+<div class="contact-strip">
+  <h3>Interested in collaborating?</h3>
+  <p>Open to research partnerships, joint publications, and conversations about African health equity and computational biology</p>
+  <a href="mailto:gachemacarol@gmail.com" class="contact-link">✉ gachemacarol@gmail.com</a>
+</div>
+```

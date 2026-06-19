@@ -1,21 +1,28 @@
 ---
 title: "Projects"
-page-layout: full
-toc: false
+page-layout: article
+toc: true
+toc-depth: 3
+title-block-style: none
 ---
+
+<style>
+#title-block-header {
+  display: none;
+}
+</style>
 
 ```{=html}
 <div style="background: linear-gradient(135deg, #1B3A5C, #0D2137); color:white; padding:3rem 1.5rem 2rem; text-align:center; margin-bottom:3rem;">
-  <h1 style="font-family:'DM Serif Display',serif; font-size:2.4rem; font-weight:400; margin-bottom:0.4rem;">Projects</h1>
+  <h1 style="font-family:'DM Serif Display',serif; font-size:2.4rem; font-weight:400; margin-bottom:0.4rem; color: white !important;">Projects</h1>
   <p style="opacity:0.75; font-size:1.05rem; margin:0;">Computational biology · Machine learning · Signal analysis</p>
 </div>
 ```
 
-::: {.container style="max-width:980px; margin:0 auto; padding:0 1.5rem;"}
 
 ---
 
-## Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy {#tcga}
+## Psychedelic Neuroplasticity and the Neurotrophic Architecture of Pancreatic Cancer (Convergent Pathways) {#tcga}
 
 ::: {.project-card style="padding:0; margin-bottom:2.5rem;"}
 ::: {.card-body style="padding:2rem;"}
@@ -92,20 +99,19 @@ To evaluate the predictive potential of these genes, I developed multiple machin
 ```{=html}
 <div class="row g-3 my-3">
   <div class="col-md-6">
-    <img src="https://github.com/CarolGachema/Alhzeimer-Hub-Genes-ML/blob/main/figures/network_plot_AD.png"
+    <img src="https://raw.githubusercontent.com/CarolGachema/Alhzeimer-Hub-Genes-ML/main/figures/network_plot_AD.png"
          class="img-fluid rounded" alt="Top 50 Hub Genes in Alzheimers Disease"
          style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
     <p class="figure-caption">Fig 1. Top 50 Hub Genes in Alzheimers Disease</p>
   </div>
   <div class="col-md-6">
-    <img src="https://github.com/CarolGachema/Alhzeimer-Hub-Genes-ML/blob/main/figures/model_comparison.png"
+    <img src="https://raw.githubusercontent.com/CarolGachema/Alhzeimer-Hub-Genes-ML/main/figures/model_comparison.png"
          class="img-fluid rounded" alt="ML Model Comparison"
          style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
     <p class="figure-caption">Fig 2. ML Model Comparison</p>
   </div>
 </div>
 ```
-> **Key tools:** Python · scikit-learn · pandas · numpy · matplotlib · ADNI
 
 [View GitHub Repository →](https://github.com/CarolGachema/Alzheimers-ML-Classifier){.card-link}
 
@@ -143,7 +149,17 @@ Both pipelines follow a reproducible workflow from raw count data through to bio
 - Developed a fully reproducible transcriptomic workflow for asthma treatment response analysis.
 - **Significance** Understanding molecular signatures associated with treatment response may contribute to personalised app
 
-Both pipelines are fully documented and reproducible in R.
+```{=html}
+<div class="row g-3 my-3">
+  <div class="col-md-6">
+    <img src="https://raw.githubusercontent.com/CarolGachema/Asthma-DEG-GO-Analysis/main/figures/volcano_plot_upgraded.png"
+         class="img-fluid rounded" alt="Top 50 Hub Genes in Alzheimers Disease"
+         style="box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+    <p class="figure-caption">Fig 1. Flovent vs Placebo analysis</p>
+  </div>
+</div>
+```
+
 
 > **Key tools:** R · DESeq2 · clusterProfiler · ggplot2 · pheatmap · GEO
 
@@ -168,12 +184,13 @@ Both pipelines are fully documented and reproducible in R.
 :::
 
 **Overview**
-This project proposes a novel computational framework called Intersystem Noise Coupling, which investigates whether biological "noise" — the small fluctuations and variability present within physiological signals — may act as a mechanism of coordination between organ systems.
+
+This project proposes a novel computational framework called Intersystem Noise Coupling, which investigates whether biological "noise" the small fluctuations and variability present within physiological signals, may act as a mechanism of coordination between organ systems.
 
 Rather than treating physiological noise as unwanted randomness, the framework explores the possibility that stochastic fluctuations carry meaningful information capable of synchronizing activity across multiple organs.
 
 
-The project aims to utilise large-scale physiological datasets, including MIMIC-IV, to analyse time-series signals from multiple organ systems simultaneously.
+The project aims to utilise large-scale physiological datasets, including MMASH and MIMIC-IV, to analyse time-series signals from multiple organ systems simultaneously.
 
 **Approaches**
 
@@ -184,6 +201,37 @@ The project aims to utilise large-scale physiological datasets, including MIMIC-
 - Physiological synchronization metrics
 - Noise propagation modelling
 
+
+**MMASH Dataset**
+
+Heart rate and locomotion signals were modelled as coupled stochastic oscillators using an **Ornstein-Uhlenbeck (OU) process framework**. 
+ 
+```{=html}
+<figure>
+<img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/ou_phase_space_real.png"
+     class="img-fluid rounded"
+     alt="Phase space comparison: idealized healthy vs MMASH-typical"
+     style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:100%; display:block; margin:1rem auto;">
+<figcaption>Figure 1. Time series and phase space portraits comparing an idealized healthy coupling scenario (κ_xy = 0.5, top row) against the MMASH dataset typical result (κ_xy = −0.0028, bottom row). The idealized system produces a structured synchronized attractor; the real data produces an independent random walk in phase space.</figcaption>
+</figure>
+```
+ 
+The idealized healthy simulation (κ_xy = 0.5) produces correlated heart-locomotion time series and a structured phase space attractor — the signature of two systems influencing each other. 
+
+The MMASH dataset, by contrast, yields a coupling coefficient of κ_xy = −0.0028: effectively zero. The phase space trajectory is an unstructured random walk, indicating that cardiac and locomotion signals in healthy wearable recordings behave as statistically independent processes at the timescales captured.
+ 
+```{=html}
+<figure>
+<img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/windowed_coupling.png"
+     class="img-fluid rounded"
+     alt="Windowed coupling coefficients across four MMASH subjects"
+     style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:100%; display:block; margin:1rem auto;">
+<figcaption>Figure 2. Windowed κ_xy (locomotion → cardiac, red) and κ_yx (cardiac → locomotion, blue dashed) across the recording period for four MMASH subjects. Coupling values are near zero throughout most of the day, with transient episodic spikes of variable direction.</figcaption>
+</figure>
+```
+ 
+The windowed analysis across subjects confirms this picture. For the majority of each recording, κ values for both directions hover near zero. Coupling is not absent by definition, brief transient episodes of stronger coupling appear episodically, and the dominant direction (locomotion-to-cardiac vs cardiac-to-locomotion) varies across subjects and time windows. Some subjects show sustained negative κ_xy during specific periods, suggesting inhibitory dynamics rather than simple uncoupling.
+ 
 
 > **Key tools:** Python · scikit-learn · pandas · numpy · matplotlib · ADNI
 
@@ -198,6 +246,4 @@ The project aims to utilise large-scale physiological datasets, including MIMIC-
 ### Working on something interesting?
 <p>Open to joint publications and research conversations</p>
 <a href="mailto:gachemacarol@gmail.com" class="contact-link">Get in touch →</a>
-:::
-
 :::
