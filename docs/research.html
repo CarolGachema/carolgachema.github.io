@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,7 +41,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c0befd36bf8ced089c81f37af6083f86.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-686ded3521acab8b3979415636c0b279.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -122,8 +87,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Caroline Gachema</span>
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/profile.jpg.png" alt="" class="navbar-logo light-content">
+    <img src="./images/profile.jpg.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -144,10 +110,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./policy.html"> 
-<span class="menu-text">Policy Work</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -156,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/https://www.linkedin.com/in/caroline-gachema-67181a2b8/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/caroline-gachema-67181a2b8/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -181,48 +143,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mechanistic-convergence-of-psychedelic-plasticity-and-pancreatic-malignancy" id="toc-mechanistic-convergence-of-psychedelic-plasticity-and-pancreatic-malignancy" class="nav-link active" data-scroll-target="#mechanistic-convergence-of-psychedelic-plasticity-and-pancreatic-malignancy">Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy</a>
+  <li><a href="#pdac" id="toc-pdac" class="nav-link active" data-scroll-target="#pdac">Psychedelic Neuroplasticity and the Neurotrophic Architecture of Pancreatic Cancer (Convergent Pathways)</a>
   <ul class="collapse">
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#computational-validation-tcga-paad-analysis" id="toc-computational-validation-tcga-paad-analysis" class="nav-link" data-scroll-target="#computational-validation-tcga-paad-analysis">Computational Validation: TCGA-PAAD Analysis</a></li>
+  </ul></li>
+  <li><a href="#hiv" id="toc-hiv" class="nav-link" data-scroll-target="#hiv">Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa</a>
+  <ul class="collapse">
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1">Overview</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#key-recommendations" id="toc-key-recommendations" class="nav-link" data-scroll-target="#key-recommendations">Key Recommendations</a></li>
+  </ul></li>
+  <li><a href="#cns" id="toc-cns" class="nav-link" data-scroll-target="#cns">Neuropathological Consequences of Emerging Viral Pathogens in East Africa:</a>
+  <ul class="collapse">
+  <li><a href="#overview-2" id="toc-overview-2" class="nav-link" data-scroll-target="#overview-2">Overview</a></li>
+  <li><a href="#conference-presentation" id="toc-conference-presentation" class="nav-link" data-scroll-target="#conference-presentation">Conference Presentation</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Research</h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Research</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
+<header id="title-block-header">
 
 
 </header>
 
 
-<div style="background:linear-gradient(135deg,#1B3A5C,#0D2137);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;">
+<style>
+#title-block-header {
+  display: none;
+}
+</style>
+<div style="background:linear-gradient(135deg,#F39C12,#E05A4E);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;">
   <h1 style="font-family:'DM Serif Display',serif;font-size:2.2rem;font-weight:400;margin-bottom:0.4rem;">Research</h1>
-  <p style="opacity:0.72;font-size:1rem;margin:0;">Convergent biology · Translational oncology · Neuro-tumour interface</p>
+  <p style="opacity:0.88;font-size:1rem;margin:0;">Convergent biology · Translational oncology · Health equity</p>
 </div>
-<section id="mechanistic-convergence-of-psychedelic-plasticity-and-pancreatic-malignancy" class="level2">
-<h2 class="anchored" data-anchor-id="mechanistic-convergence-of-psychedelic-plasticity-and-pancreatic-malignancy">Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy</h2>
+<section id="pdac" class="level2">
+<h2 class="anchored" data-anchor-id="pdac">Psychedelic Neuroplasticity and the Neurotrophic Architecture of Pancreatic Cancer (Convergent Pathways)</h2>
 <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
-<p><span class="skill-badge bio">Preprint — AfricArXiv</span> <span class="skill-badge ml">In Submission · 2026</span> <span class="skill-badge soft">Caroline Wambui Gachema</span></p>
+<p><span class="skill-badge ml">In Progress · 2026</span></p>
 </div>
-<section id="abstract" class="level3">
-<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Psilocybin-assisted therapy is entering oncology settings at scale: clinical trials now enrol patients with cancer-related psychological distress, and advancing Phase 3 data for treatment-resistant depression have accelerated its broader integration into cancer care. Its therapeutic mechanism has been substantially reframed by Moliner, who demonstrated that psilocin (the active metabolite of psilocybin) directly binds the TrkB receptor as a positive allosteric modulator, positioning neurotrophin signalling as the primary driver of psychedelic-induced neuroplasticity.</p>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Psilocybin-assisted therapy is entering oncology settings at scale: clinical trials now enrol patients with cancer-related psychological distress, and advancing Phase 3 data for treatment-resistant depression have accelerated its broader integration into cancer care. Its therapeutic mechanism has been substantially reframed by Moliner <em>et al.</em> (2023), who demonstrated that psilocin, the active metabolite of psilocybin, directly binds the TrkB receptor as a positive allosteric modulator, positioning neurotrophin signalling as the primary driver of psychedelic-induced neuroplasticity.</p>
 <p>Concurrently, pancreatic ductal adenocarcinoma (PDAC), a malignancy with near-universal perineural invasion (PNI) and a 12-month median survival post-diagnosis, is driven at the neural interface by nerve growth factor (NGF) signalling through TrkA, TrkB’s closest structural paralogue, sharing approximately 60% intracellular kinase domain identity and activating identical downstream effectors: MAPK/ERK, PI3K/Akt, and PLCγ. Critically, TrkB is also overexpressed in PDAC tumour cells, where it promotes epithelial-mesenchymal transition and anoikis resistance.</p>
 <p>This paper maps the structural and signalling convergence of TrkA and TrkB; reviews the emergence of cancer neuroscience as a field; traces psilocybin’s clinical trajectory in oncology populations; and proposes organoid-based neuro-tumour chip models and generative AI-driven pathway simulation as the minimum preclinical infrastructure required to characterise this interface before it is encountered in clinical practice.</p>
 <hr>
@@ -240,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="co-expression-of-ntrk1-and-ntrk2" class="level4">
 <h4 class="anchored" data-anchor-id="co-expression-of-ntrk1-and-ntrk2">Co-expression of NTRK1 and NTRK2</h4>
-<p>A significant positive correlation exists between <em>NTRK1</em> and <em>NTRK2</em> expression across PDAC tumors (Spearman ρ = 0.416, p &lt; 0.001). This co-expression pattern establishes that both receptors are simultaneously active within the same tumor microenvironmental context - a prerequisite for the cross-talk the paper proposes.</p>
+<p>A significant positive correlation exists between <em>NTRK1</em> and <em>NTRK2</em> expression across PDAC tumours (Spearman ρ = 0.416, p &lt; 0.001). This co-expression pattern establishes that both receptors are simultaneously active within the same tumour microenvironmental context — a prerequisite for the cross-talk the paper proposes.</p>
 <figure class="figure">
 <img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure2_coexpression_scatter.png" class="img-fluid rounded figure-img" alt="NTRK1 vs NTRK2 co-expression scatter" style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:620px; display:block; margin:1rem auto;">
 <figcaption>Figure 2. NTRK1–NTRK2 co-expression in TCGA-PAAD. Each point represents one tumour sample. Spearman ρ = 0.416, p &lt; 0.001. Labelled samples: top 6 co-expressing tumours.</figcaption>
@@ -248,11 +213,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="survival-analysis" class="level4">
 <h4 class="anchored" data-anchor-id="survival-analysis">Survival Analysis</h4>
-<p>Kaplan-Meier analysis did not demonstrate a statistically significant association between <em>NTRK2</em> expression and overall survival at median-split dichotomisation (HR = 0.89, 95% CI 0.59–1.33, log-rank p = 0.57), nor for <em>NTRK1</em> (HR = 0.75, 95% CI 0.50–1.13, p = 0.17). This null finding is consistent with the uniformly poor prognosis of PDAC across molecular subtypes and the limited statistical power of n = 182 for detecting moderate gene-level effects. The paper’s central argument is mechanistic rather than prognostic.</p>
+<p>Kaplan-Meier analysis did not demonstrate a statistically significant association between <em>NTRK2</em> expression and overall survival at median-split dichotomisation (HR = 0.89, 95% CI 0.59–1.33, log-rank p = 0.57), nor for <em>NTRK1</em> (HR = 0.75, 95% CI 0.50–1.13, p = 0.17).</p>
+<p>This null finding is consistent with the uniformly poor prognosis of PDAC across molecular subtypes and the limited statistical power of n = 182 for detecting moderate gene-level effects. The paper’s central argument is mechanistic rather than prognostic.</p>
 </section>
 <section id="pathway-enrichment" class="level4">
 <h4 class="anchored" data-anchor-id="pathway-enrichment">Pathway Enrichment</h4>
-<p>GSEA-KEGG analysis, with genes ranked by Spearman correlation with <em>NTRK2</em> expression across all TCGA-PAAD samples, identified <strong>MAPK signalling</strong> and <strong>PI3K-Akt signalling</strong> as significantly positively enriched pathways in the NTRK2 co-expression network.</p>
+<p>GSEA-KEGG analysis, with genes ranked by Spearman correlation with <em>NTRK2</em> expression across all TCGA-PAAD samples, identified <strong>MAPK signalling</strong> and <strong>PI3K-Akt signalling</strong> as significantly positively enriched pathways in the NTRK2 co-expression network — precisely the downstream effectors shared between TrkA (perineural invasion) and TrkB (psilocin target).</p>
 <div class="row g-3 my-2">
   <div class="col-md-6">
     <figure class="figure">
@@ -267,15 +233,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </figure>
   </div>
 </div>
-<p>These pathways are precisely the downstream effectors shared between TrkA (perineural invasion) and TrkB (psilocin target), providing direct empirical support for the molecular convergence hypothesis.</p>
+<p><a href="https://github.com/CarolGachema/TCGA-PAAD-NTRK" class="card-link">📂 View full analysis on GitHub</a> &nbsp; · &nbsp; Data: <a href="https://xenabrowser.net" class="card-link">UCSC Xena Browser</a></p>
 <hr>
-<p>Data: TCGA-PAAD from <a href="https://xenabrowser.net">UCSC Xena Browser</a></p>
-<hr>
-
-
-<!-- -->
-
 </section>
+</section>
+</section>
+<section id="hiv" class="level2">
+<h2 class="anchored" data-anchor-id="hiv">Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa</h2>
+<div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+<p><span class="skill-badge soft">WHO dir</span> <span class="skill-badge bio">2026</span></p>
+</div>
+<section id="overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="overview-1">Overview</h3>
+<p>The paper is a structural and bio-ethical critique of the current global HIV cure paradigm. It argues that while the scientific community celebrates allogeneic hematopoietic stem cell transplantation (allo-HSCT) as a landmark proof of concept, this “cure” is a biological and logistical illusion for Sub-Saharan Africa (SSA), the region that bears over two-thirds of the global HIV burden. The core thesis is that the cure is built on an accidental, Euro centric genetic framework that completely excludes, underfunds, and ignores the populations that need a HIV cure the most</p>
+</section>
+<section id="the-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem">The Problem</h3>
+<p>1.<strong>Complete Absence of the Allele</strong> - The cure relies entirely on a donor possessing the homozygous CCR5Δ32 genetic mutation, which stops HIV from entering host cells. - While this mutation exists in about 1% of Northern Europeans, large-scale genomic data shows its frequency is precisely 0% in studied populations across Angola, Nigeria, Zimbabwe, and Ethiopia.The HLA Matching Compound Problem: - Because successful transplants require strict Human Leukocyte Antigen (HLA) tissue matching to prevent fatal graft-versus-host disease, an African patient cannot simply use a European donor.</p>
+<ol start="2" type="1">
+<li><p><strong>The Cost Wall</strong> - A single allo-HSCT procedure costs between $100,000 and $300,000. The procedure demands specialized sterile bone marrow units, advanced blood banking, high-resolution HLA typing tech, and intensive care units equipped for extreme toxicities. These resources are fundamentally absent or severely constrained in most Sub-Saharan healthcare systems.</p></li>
+<li><p><strong>The Cancer Requirement</strong> - This procedure has never been a standalone treatment for HIV; it is an incredibly aggressive, last-resort intervention for patients who also have life-threatening blood cancers (like leukemia).</p></li>
+</ol>
+</section>
+<section id="key-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="key-recommendations">Key Recommendations</h3>
+<p>The paper makes the following recommendations directed at the WHO and trial sponsors:</p>
+<ol type="1">
+<li><p><strong>Commission an SSA</strong> - Focused Cure Agenda: Shift funding to study CCR5-independent remission mechanisms and invest in gene therapies with low-income access guidelines built into the initial trial phases.</p></li>
+<li><p><strong>Diversify Global Donor Registries</strong> - Launch targeted, well-funded recruitment drives for African, Asian, and Latin American donors to fix the massive European bias in global HLA matching data.</p></li>
+<li><p><strong>Establish Regional Centers of Excellence</strong> - Fund the construction of at least five regional advanced hematological and gene therapy medical hubs across Sub-Saharan Africa to serve both cure research and broader oncological needs.</p></li>
+<li><p><strong>Enforce Advance Market Commitments (AMCs)</strong> - Mandate tiered licensing agreements guaranteeing that when a viable, population-agnostic cure is found, it is affordable and accessible to LMICs immediately upon regulatory approval, preventing the multi-decade delay that occurred with early antiretroviral drugs.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="cns" class="level2">
+<h2 class="anchored" data-anchor-id="cns">Neuropathological Consequences of Emerging Viral Pathogens in East Africa:</h2>
+<div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+<p><span class="skill-badge ml">IGAE Conference · 2026</span></p>
+</div>
+<section id="overview-2" class="level3">
+<h3 class="anchored" data-anchor-id="overview-2">Overview</h3>
+<p>Emerging and re-emerging viral diseases pose a growing public health challenge in East Africa, yet much of the scientific focus has centered on acute infection and mortality rather than their long-term effects on the nervous system. This review explores how viral pathogens can affect the central nervous system through mechanisms such as neuroinflammation, blood-brain barrier disruption, immune-mediated injury, and direct viral invasion, resulting in neurological complications that may persist long after the initial infection has resolved.</p>
+<p>Drawing on current evidence from the literature, the paper synthesizes the neuropathological mechanisms associated with emerging viral infections and highlights the implications for healthcare systems in East Africa. It identifies critical knowledge gaps in neurological surveillance, diagnosis, and long-term patient management while emphasizing the need for greater investment in neuroscience research within the region. The work reflects my broader interest in understanding disease mechanisms at both the molecular and systems levels, an interest that later informed my computational genomics projects.</p>
+<p>###The Problem - Limited understanding of the long-term neurological consequences of emerging viral infections in East African populations. - Insufficient neurological surveillance and research infrastructure to monitor post-infectious neurological complications. - A lack of region-specific evidence to guide clinical management, public health policy, and preparedness for future outbreaks.</p>
+</section>
+<section id="conference-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="conference-presentation">Conference Presentation</h3>
+<p>Abstract presented at the <strong>Insitute for Global Academic Excellence Conference, 2026</strong>.</p>
+<hr>
+<div class="contact-strip">
+  <h3 class="anchored">Interested in collaborating?</h3>
+  <p>Open to research partnerships, joint publications, and conversations about African health equity and computational biology</p>
+  <a href="mailto:gachemacarol@gmail.com" class="contact-link">✉ gachemacarol@gmail.com</a>
+</div>
+
+
 </section>
 </section>
 
@@ -351,60 +364,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       });
       clipboardModal.on('success', onCopySuccess);
     }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
-    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/carolinegachema\.github\.io");
+        var filterRegex = new RegExp("https:\/\/carolgachema\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -730,115 +692,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Research"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> article</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 3</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div style="background:linear-gradient(135deg,#1B3A5C,#0D2137);color:white;padding:3rem 1.5rem 2rem;text-align:center;margin-bottom:2.5rem;border-radius:0 0 1rem 1rem;"&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;h1 style="font-family:'DM Serif Display',serif;font-size:2.2rem;font-weight:400;margin-bottom:0.4rem;"&gt;Research&lt;/h1&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;p style="opacity:0.72;font-size:1rem;margin:0;"&gt;Convergent biology · Translational oncology · Neuro-tumour interface&lt;/p&gt;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanistic Convergence of Psychedelic Plasticity and Pancreatic Malignancy</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>::: {style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;"}</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"skill-badge bio"</span><span class="dt">&gt;</span>Preprint — AfricArXiv<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"skill-badge ml"</span><span class="dt">&gt;</span>In Submission · 2026<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"skill-badge soft"</span><span class="dt">&gt;</span>Caroline Wambui Gachema<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### Abstract</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Psilocybin-assisted therapy is entering oncology settings at scale: clinical trials now enrol patients with cancer-related psychological distress, and advancing Phase 3 data for treatment-resistant depression have accelerated its broader integration into cancer care. Its therapeutic mechanism has been substantially reframed by Moliner, who demonstrated that psilocin (the active metabolite of psilocybin) directly binds the TrkB receptor as a positive allosteric modulator, positioning neurotrophin signalling as the primary driver of psychedelic-induced neuroplasticity.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Concurrently, pancreatic ductal adenocarcinoma (PDAC), a malignancy with near-universal perineural invasion (PNI) and a 12-month median survival post-diagnosis, is driven at the neural interface by nerve growth factor (NGF) signalling through TrkA, TrkB's closest structural paralogue, sharing approximately 60% intracellular kinase domain identity and activating identical downstream effectors: MAPK/ERK, PI3K/Akt, and PLCγ. Critically, TrkB is also overexpressed in PDAC tumour cells, where it promotes epithelial-mesenchymal transition and anoikis resistance.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>This paper maps the structural and signalling convergence of TrkA and TrkB; reviews the emergence of cancer neuroscience as a field; traces psilocybin's clinical trajectory in oncology populations; and proposes organoid-based neuro-tumour chip models and generative AI-driven pathway simulation as the minimum preclinical infrastructure required to characterise this interface before it is encountered in clinical practice.</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### Computational Validation: TCGA-PAAD Analysis</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>To provide empirical grounding for the molecular hypothesis, I analysed *NTRK1* (TrkA) and *NTRK2* (TrkB) expression across the TCGA-PAAD cohort (n = 182 pancreatic ductal adenocarcinoma tumour samples).</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Expression of NTRK1 and NTRK2 in PDAC</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Both neurotrophin receptors are expressed across the full PDAC cohort, with *NTRK1* showing a higher median expression (0.95 log₂ units) relative to *NTRK2* (0.32 log₂ units). The right-skewed distribution of *NTRK1* indicates a subset of tumours with very high TrkA expression, consistent with its established role in driving perineural invasion.</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figure&gt;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure1_expression_distribution.png"</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">     class="img-fluid rounded"</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">     alt="NTRK1 and NTRK2 expression distributions in TCGA-PAAD"</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">     style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:680px; display:block; margin:1rem auto;"&gt;</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figcaption&gt;Figure 1. NTRK1 and NTRK2 expression across 182 PDAC tumour samples (TCGA-PAAD, HiSeqV2). Violin plots with embedded boxplot and individual data points. Median values annotated.&lt;/figcaption&gt;</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figure&gt;</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Co-expression of NTRK1 and NTRK2</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>A significant positive correlation exists between *NTRK1* and *NTRK2* expression across PDAC tumors (Spearman ρ = 0.416, p &lt; 0.001). This co-expression pattern establishes that both receptors are simultaneously active within the same tumor microenvironmental context - a prerequisite for the cross-talk the paper proposes.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figure&gt;</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure2_coexpression_scatter.png"</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="in">     class="img-fluid rounded"</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="in">     alt="NTRK1 vs NTRK2 co-expression scatter"</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="in">     style="box-shadow:0 4px 20px rgba(0,0,0,0.1); max-width:620px; display:block; margin:1rem auto;"&gt;</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figcaption&gt;Figure 2. NTRK1–NTRK2 co-expression in TCGA-PAAD. Each point represents one tumour sample. Spearman ρ = 0.416, p &lt; 0.001. Labelled samples: top 6 co-expressing tumours.&lt;/figcaption&gt;</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figure&gt;</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Survival Analysis</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Kaplan-Meier analysis did not demonstrate a statistically significant association between *NTRK2* expression and overall survival at median-split dichotomisation (HR = 0.89, 95% CI 0.59–1.33, log-rank p = 0.57), nor for *NTRK1* (HR = 0.75, 95% CI 0.50–1.13, p = 0.17). This null finding is consistent with the uniformly poor prognosis of PDAC across molecular subtypes and the limited statistical power of n = 182 for detecting moderate gene-level effects. The paper's central argument is mechanistic rather than prognostic.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Pathway Enrichment</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>GSEA-KEGG analysis, with genes ranked by Spearman correlation with *NTRK2* expression across all TCGA-PAAD samples, identified **MAPK signalling** and **PI3K-Akt signalling** as significantly positively enriched pathways in the NTRK2 co-expression network.</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="row g-3 my-2"&gt;</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="col-md-6"&gt;</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;figure&gt;</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure4_enrichplot_hsa04010.png"</span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="in">           class="img-fluid rounded" alt="MAPK signalling pathway enrichment"</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="in">           style="box-shadow:0 4px 16px rgba(0,0,0,0.1);"&gt;</span></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;figcaption&gt;MAPK Signalling Pathway (hsa04010) — positively enriched in NTRK2 co-expression network&lt;/figcaption&gt;</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/figure&gt;</span></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="col-md-6"&gt;</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;figure&gt;</span></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;img src="https://raw.githubusercontent.com/CarolGachema/TCGA-PAAD-NTRK/main/figures/Figure4_enrichplot_hsa04151.png"</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="in">           class="img-fluid rounded" alt="PI3K-Akt signalling pathway enrichment"</span></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="in">           style="box-shadow:0 4px 16px rgba(0,0,0,0.1);"&gt;</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;figcaption&gt;PI3K-Akt Signalling Pathway (hsa04151) — positively enriched in NTRK2 co-expression network&lt;/figcaption&gt;</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/figure&gt;</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>These pathways are precisely the downstream effectors shared between TrkA (perineural invasion) and TrkB (psilocin target), providing direct empirical support for the molecular convergence hypothesis.</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>Data: TCGA-PAAD from <span class="co">[</span><span class="ot">UCSC Xena Browser</span><span class="co">](https://xenabrowser.net)</span></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Caroline · Nairobi, Kenya</p>
+<p>© 2026 Gachema · Nairobi, Kenya</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
