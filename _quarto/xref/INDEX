@@ -1,0 +1,59 @@
+{
+  "index.qmd": {
+    "index.html": "0f34a219"
+  },
+  "research.qmd": {
+    "research.html": "79ac0543"
+  },
+  "blog.qmd": {
+    "blog.html": "b5472aac"
+  },
+  "research/text-as-data-local-news.qmd": {
+    "text-as-data-local-news.html": "a57a01eb"
+  },
+  "research/deg.qmd": {
+    "deg.html": "3be4f2a7"
+  },
+  "blog/mapping-neighborhood-change.qmd": {
+    "mapping-neighborhood-change.html": "3939d181"
+  },
+  "blog/notes-from-the-field.qmd": {
+    "notes-from-the-field.html": "ce42dd0a"
+  },
+  "blog/reproducible-pipeline-targets-quarto.qmd": {
+    "reproducible-pipeline-targets-quarto.html": "b13e9d49"
+  },
+  "research/alzheimer/alzheimers.qmd": {
+    "alzheimers.html": "21047b95"
+  },
+  "research/deg/deg.qmd": {
+    "deg.html": "f78424b8"
+  },
+  "research/hiv/hiv.qmd": {
+    "hiv.html": "2c8433e9"
+  },
+  "research/noise coupling/intersystem-noise-coupling.qmd": {
+    "intersystem-noise-coupling.html": "4eb15362"
+  },
+  "research/pdac/pdac.qmd": {
+    "pdac.html": "6b0b524b"
+  },
+  "research/viral-cns/viral-cns.qmd": {
+    "viral-cns.html": "39ce707c"
+  },
+  "research/alzheimers.qmd": {
+    "alzheimers.html": "e6e7f770"
+  },
+  "research/intersystem-noise-coupling.qmd": {
+    "intersystem-noise-coupling.html": "2efd67b4"
+  },
+  "research/hiv.qmd": {
+    "hiv.html": "27fa2d2b"
+  },
+  "research/pdac.qmd": {
+    "pdac.html": "dc2f1989"
+  },
+  "research/viral-cns.qmd": {
+    "viral-cns.html": "cb52baac"
+  }
+}

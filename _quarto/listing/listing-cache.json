@@ -1,0 +1,14 @@
+{
+  "listingMap": {
+    "research.qmd": [
+      "research",
+      "/*/index.qmd",
+      "/*/index.markdown",
+      "/*/index.md",
+      "external-items/metadata.yml"
+    ],
+    "blog.qmd": [
+      "blog"
+    ]
+  }
+}
