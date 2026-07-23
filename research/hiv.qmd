@@ -1,0 +1,41 @@
+---
+title: "HIV Stem Cell Cure & Sub-Saharan Africa"
+description: "Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa"
+date: 2025-05-04
+categories: [Global Policy, Health Equity, WHO]
+image: "images/banner-hiv.jpg"
+title-block-banner: "images/banner-hiv.jpg"    
+toc: true          
+---
+
+## Overview
+
+The remarkable success of stem-cell-mediated HIV cure strategies has generated worldwide optimism.
+
+However, nearly all reported cures have depended upon donors carrying the CCR5Δ32 mutation a genetic variant that is exceptionally rare within African populations.
+
+This paper examines the implications of this disparity for global health equity.
+
+Rather than focusing solely on molecular biology, the work combines genetics, epidemiology, ethics, and health policy to ask whether current HIV cure research adequately reflects the populations most affected by HIV.
+
+## Themes
+
+- Population genetics
+- HIV biology
+- Scientific equity
+- Global health policy
+- Research accessibility
+
+## Abstract
+
+The allogeneic hematopoietic stem cell transplantation (allo-HSCT) cure for Human Immunodeficiency Virus (HIV), achieved serendipitously through cancer treatment in a small number of individuals in Europe and North America, has been acclaimed globally as a landmark proof of concept. However, the scientific community's celebration of this development obscures a critical and largely unaddressed structural problem: the cure's underlying mechanism which is the CCR5Δ32 homozygous genetic mutation is virtually absent in Sub-Saharan African (SSA) populations, who bear over two thirds of the global HIV burden. 
+This paper argues that the stem cell cure, as currently constituted, is almost 
+entirely irrelevant to Sub-Saharan Africa on three compounding grounds.
+
+(1) The near-complete absence of the CCR5Δ32 allele in SSA populations renders donor matching biologically impractical.
+
+(2) The procedure's extreme cost, complexity, and infrastructural demands make it logistically unfeasible in low and middle income country (LMIC) health systems.
+
+(3) The cure was not intentionally designed for the global HIV crisis, it emerged accidentally from oncological care of a single White American patient in Berlin. Despite mounting evidence from subsequent cases, no coordinated international effort is actively developing a scalable, SSA-relevant cure pathway. 
+
+This paper calls on the World Health Organization to redirect research funding and policy attention toward scalable, population-appropriate HIV cure strategies.

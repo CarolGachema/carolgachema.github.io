@@ -1,0 +1,470 @@
+/*-- scss:defaults --*/
+
+// Fonts — a warm serif for display/headings, a clean grotesque for body & UI text
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+
+// ---- Color tokens ----
+$cream:       #FFFFFF; // page background — pure white
+$cream-deep:  #FFFFFF; // card / photo-frame background — lighter peach
+$navy:        #0E2A42; // headings, logo, strong text — deeper, richer navy
+$rust:        #A8451D; // links, nav, tag borders, icons — more red-orange, less brown
+$rust-dark:   #7A2E10; // hover state
+$ink:         #33414C; // body copy — cooler slate, not flat charcoal
+$border-soft: #EFE1C9; // hairlines, card borders — lighter to match new cream
+
+// ---- Bootstrap / Quarto variable overrides ----
+$body-bg: $cream;
+$body-color: $ink;
+$link-color: $rust;
+$link-hover-color: $rust-dark;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-serif: "Fraunces", Georgia, serif;
+$headings-font-family: $font-family-serif;
+$headings-color: $navy;
+$headings-font-weight: 600;
+
+$navbar-bg: $cream;
+$navbar-fg: $rust;
+$navbar-hl: $rust-dark;
+
+$footer-bg: $cream;
+$footer-fg: $navy;
+
+// Cards (drives the `grid` listing type used on the Research page)
+$card-bg: $cream-deep;
+$card-border-color: $border-soft;
+$card-border-radius: 14px;
+$card-cap-bg: transparent;
+
+/*-- scss:rules --*/
+
+body {
+  letter-spacing: 0.1px;
+}
+
+// ---------- Navbar ----------
+.navbar {
+  // border-bottom removed — this was the line under the nav you wanted gone
+  box-shadow: none;
+
+  .navbar-title {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $navy !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $rust !important;
+    padding: 0.5rem 0.9rem;
+    transition: color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $rust-dark !important;
+    }
+  }
+
+  .navbar-nav .nav-link.active {
+    color: $navy !important;
+  }
+
+  .bi {
+    color: $rust;
+  }
+}
+
+// ---------- Footer ----------
+.page-footer {
+  border-top: 1px solid $border-soft;
+  font-size: 0.85rem;
+
+  a {
+    color: $rust;
+  }
+}
+
+// ---------- Headings & links ----------
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  color: $navy;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+// ---------- Hero (home page photo + intro row) ----------
+.hero-grid {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-photo-col {
+  flex: 0 0 18em;
+  text-align: center;
+}
+
+.hero-photo-frame {
+  border-radius: 18px;
+  background-color: $cream-deep;
+  padding: 0.6rem;
+  box-shadow: 0 6px 18px rgba(28, 43, 58, 0.08);
+
+  img {
+    border-radius: 12px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.hero-name {
+  font-family: $font-family-serif;
+  font-size: 1.7rem;
+  color: $navy;
+  margin-top: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.hero-role {
+  display: block;
+  color: #6b6255;
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background-color: $rust;
+    color: $cream !important;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $rust-dark;
+    }
+  }
+}
+
+.hero-intro-col {
+  flex: 1 1 20em;
+  padding-top: 0.5rem;
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+.hero-divider {
+  border: none;
+  border-top: 1px solid $border-soft;
+  margin: 2.5rem 0;
+}
+
+// ---------- About me (two-column bio section) ----------
+.about-me-section {
+  .columns {
+    gap: 2.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+    color: $ink;
+  }
+
+  ul {
+    padding-left: 1.1rem;
+    font-size: 0.92rem;
+    color: $ink;
+  }
+}
+
+// ---------- Shared listing bits (blog + research) ----------
+.listing-categories .listing-category,
+.quarto-grid-item .listing-categories .listing-category {
+  border: 1px solid $rust;
+  color: $rust;
+  background-color: transparent;
+  border-radius: 999px;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.7rem;
+  margin: 0 0.35rem 0.35rem 0;
+  cursor: default;
+}
+
+.listing-date,
+.listing-reading-time {
+  color: #7A7266;
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+}
+
+// ---------- Blog listing (type: default) ----------
+.quarto-post {
+  border-bottom: 1px solid $border-soft;
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+
+  .thumbnail img {
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(28, 43, 58, 0.08);
+  }
+
+  .listing-title {
+    font-family: $font-family-serif;
+  }
+
+  .listing-title a,
+  h3.listing-title a {
+    color: $rust;
+    font-weight: 600;
+
+    &:hover {
+      color: $rust-dark;
+    }
+  }
+
+  .listing-description {
+    color: $ink;
+    line-height: 1.6;
+  }
+
+  .metadata {
+    .listing-date {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+// ---------- Research listing (type: grid) ----------
+.quarto-grid-item {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+  .card {
+    height: 100%;
+    border-color: $border-soft;
+    overflow: hidden;
+  }
+
+  p.card-img-top > img,
+  .card-img-top {
+    border-radius: 0;
+    aspect-ratio: 16 / 10.5;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.25rem 1.35rem 1rem;
+  }
+
+  .card-title {
+    font-family: $font-family-serif;
+    font-size: 1.15rem;
+
+    a {
+      color: $navy;
+
+      &:hover {
+        color: $rust;
+      }
+    }
+  }
+
+  .card-text {
+    color: $ink;
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .card-footer {
+    background-color: transparent;
+    border-top: none;
+    color: #7A7266;
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(28, 43, 58, 0.1);
+  }
+}
+
+// ---------- Accessibility ----------
+a:focus-visible,
+.nav-link:focus-visible,
+.hero-icons a:focus-visible {
+  outline: 2px solid $rust;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quarto-grid-item,
+  .quarto-grid-item:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+// ---------- Title banner (research + blog post pages) ----------
+.quarto-title-banner {
+  padding-top: 5.5rem;
+  padding-bottom: 2.25rem;
+
+  .quarto-title .title {
+    font-size: 2.6rem;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  }
+
+  .description {
+    font-family: $font-family-sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    opacity: 0.92;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .quarto-categories {
+    .quarto-category {
+      opacity: 1;
+      border-radius: 999px;
+      border-color: rgba(251, 243, 234, 0.55);
+      background-color: rgba(251, 243, 234, 0.12);
+      backdrop-filter: blur(2px);
+      font-family: $font-family-sans-serif;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.quarto-title-meta {
+  padding-top: 0.5rem;
+
+  .quarto-title-meta-heading {
+    font-family: $font-family-sans-serif;
+    color: $rust;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+
+  .quarto-title-meta-contents {
+    color: $navy;
+    font-family: $font-family-sans-serif;
+  }
+}
+
+// ---------- Table of contents sidebar ----------
+#TOC {
+  #toc-title {
+    font-family: $font-family-serif;
+    color: $navy;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    color: #6b6255;
+    font-family: $font-family-sans-serif;
+    font-size: 0.88rem;
+    border-left: 2px solid $border-soft;
+    padding-left: 0.75rem;
+
+    &:hover {
+      color: $rust;
+    }
+
+    &.active {
+      color: $rust;
+      font-weight: 600;
+      border-left-color: $rust;
+    }
+  }
+}
+
+.research-links{
+  margin-top:2rem;
+  text-align:left;
+}
+
+.research-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+
+  padding:.7rem 1.35rem;
+
+  border:1.5px solid #B35A1F;
+  border-radius:10px;
+
+  color:#B35A1F;
+  background:#fff;
+
+  font-size:1rem;
+  font-weight:500;
+  text-decoration:none;
+
+  transition:all .2s ease;
+}
+
+.research-btn:hover{
+  background:#B35A1F;
+  color:#fff;
+}
+
+.research-btn i{
+  font-size:1.15rem;
+}
+
+.credential {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.credential {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+.credential i {
+  color: #222;
+  font-size: 0.9rem;
+  width: 18px;
+  flex-shrink: 0;
+}
+
+.credential a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.credential a:hover {
+  color: #E05A4E;
+}

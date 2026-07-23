@@ -1,0 +1,10 @@
+---
+title: "The Brain's endless questions"
+description: "On complexity and connectomics"
+date: 2026-07-23
+categories: [systems, neuroscience, neurobiology]
+iimage: "images/banner-brain.png"
+title-block-banner: "images/banner-brain.png"    
+toc: true       
+---
+

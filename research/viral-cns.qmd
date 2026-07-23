@@ -1,0 +1,27 @@
+---
+title: "Emerging Viral Pathogens & the CNS"
+description: "Neuropathological Consequences of Emerging Viral Pathogens in East Africa"
+date: 2025-05-30
+categories: [Neurobiology, Zika , Chikungunya, IGAE Conference]
+image: "images/banner-cns.jpg"
+title-block-banner: "images/banner-cns.jpg"    
+toc: true          
+---
+
+## Overview
+
+Historically, neurological complications were viewed as relatively uncommon consequences of viral infection. Clinical management understandably prioritized survival during acute disease, particularly in high-fatality outbreaks such as Ebola virus disease or Marburg virus disease.
+
+However, advances in molecular virology, neuroimmunology, and neuroimaging have begun challenging this assumption.
+
+A growing number of studies demonstrate that viruses need not directly destroy neurons to produce lasting neurological dysfunction. Instead, damage frequently arises through indirect mechanisms including excessive immune activation, chronic inflammation, endothelial dysfunction, autoimmune responses, microglial activation, vascular injury, and prolonged disruption of neural homeostasis.
+
+The COVID-19 pandemic accelerated this shift in understanding. Reports of persistent cognitive dysfunction ("brain fog"), depression, anxiety, anosmia, stroke, encephalopathy, and neurodegeneration following SARS-CoV-2 infection demonstrated that neurological sequelae could become major contributors to disease burden even after viral clearance.
+
+
+## Abstract
+As the landscape of infectious diseases in East Africa continues to shift under the pressure of ecological disruption, climate change, and rapid urbanization, the clinical focus of regional health systems remains disproportionately concentrated on acute systemic manifestations of viral disease. The long term neurological implications of emerging and re-emerging viral pathogens, particularly Zika virus, Chikungunya virus, and Rift Valley Fever virus, remain critically under-investigated in the East African context. This paper presents a narrative synthesis of existing literature on the molecular and histopathological mechanisms by which these pathogens bypass the blood-brain barrier (BBB) to induce neuroinflammation and chronic cellular damage. Drawing on documented outbreak data from Kenya, Tanzania, Somalia, Uganda, and Sudan, alongside current understanding of viral neurotropism and BBB biology, this review identifies a growing 'silent pandemic' of post-viral neurological sequelae that threatens to impose a substantial and largely invisible burden on the region's public health systems. The findings underscore the urgent need for integrating neuro-diagnostic protocols into standard infectious disease surveillance frameworks in East Africa, and highlight the significant opportunity that bioinformatics driven approaches to mapping viral neurotropism offer for the development of targeted CNS therapeutics. Strengthening the intersection between clinical pathology, neurobiology, and computational biology is identified as essential for pandemic preparedness and long-term neurological health in the region.
+
+## Notes
+
+*Banner image adapted from DosSantos et al. (2014), Frontiers in Cellular Neuroscience, licensed under CC BY. https://doi.org/10.3389/fncel.2014.00302*

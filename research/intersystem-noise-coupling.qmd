@@ -1,0 +1,127 @@
+---
+title: "Intersystem Noise Coupling"
+description: "A computational neuroscience project investigating how stochastic interactions between neural systems can produce emergent brain dynamics relevant to cognition and psychiatric disorders."
+date: 2026-07-23
+categories: [Signal Analysis, Instrumentation,]
+image: "images/banner-noise.webp"
+title-block-banner: "images/banner-noise.webp"    
+toc: true          
+---
+
+<div class="research-links">
+  <a href="https://github.com/CarolGachema/Intersystem-Noise-Coupling" class="research-btn" target="_blank">
+    <i class="bi bi-github"></i> Code
+  </a>
+</div>
+
+## Overview
+
+The Intersystem Noise Coupling project proposes that independent biological systems become functionally coupled through structured fluctuations in activity.
+
+Instead of viewing neural networks as deterministic processors exchanging only explicit signals, INC suggests that communication also occurs through coordinated modulation of variability.
+
+These fluctuations exhibit statistical structure capable of synchronizing distributed biological systems without requiring rigid connectivity.
+
+## Conceptual Framework
+
+The human body consists of multiple interacting systems.
+
+INC proposes, rather than relying exclusively on physical connectivity, systems may transiently coordinate through correlated stochastic dynamics.When variability becomes synchronised across multiple systems, information exchange becomes more efficient, allowing distributed networks to behave as integrated functional units.
+
+## Relationship to Existing Science
+
+The framework draws inspiration from several established concepts 
+
+### Neural Synchrony
+
+Large-scale synchronisation of oscillatory activity has long been associated with attention, perception, and conscious awareness.
+
+### Critical Brain Dynamics
+
+Many researchers argue that healthy brains operate near a critical state balancing stability and flexibility.Small fluctuations can propagate throughout the network, producing maximal computational efficiency.Structured noise coupling may represent one mechanism by which brains maintain this critical operating regime.
+
+### Predictive Processing
+
+Predictive coding proposes that brains continuously minimise prediction error.
+INC suggests that variability itself may encode uncertainty, allowing prediction errors to propagate through dynamically coupled networks.
+
+### Complexity Theory
+
+Complex adaptive systems frequently exhibit emergent behaviour through interactions among individually simple components.
+
+Noise coupling provides a potential biological mechanism supporting emergence across neural systems.
+
+## Data & methods
+
+1. **Signal extraction** — RR intervals from ECG for the cardiac signal, accelerometer magnitude (√x²+y²+z²) for the locomotor signal, both resampled onto a shared 4 Hz grid so the two are directly comparable.
+
+2. **Frequency-domain analysis** — power spectral density of heart rate variability, split into low-frequency (0.04–0.15 Hz) and high-frequency (0.15–0.40 Hz) bands, with their ratio used as an index of sympathovagal balance.
+
+3. **Cross-organ coherence** — spectral coherence between the cardiac and locomotor signals, to identify which frequencies, if any, the two systems synchronize at.
+
+4. **Coupled OU model fitting** — the core model:
+
+```
+dX = θ_x(−X)dt + κ_xy·Y·dt + σ_x·dW_x    (cardiac)
+dY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)
+```
+
+κ_xy and κ_yx capture directional coupling strength — locomotion→cardiac and cardiac→locomotion respectively — σ_x and σ_y the intrinsic noise level of each system, θ_x and θ_y how fast each reverts to its own baseline. Parameters are fit per subject by least-squares regression on the discretized derivatives.
+
+5. **Transfer entropy** — a model-free, information-theoretic check on the same question: how much knowing one system's past reduces uncertainty about the other's future, without assuming the linear relationship the OU model does.
+
+6. **Windowed coupling** — the same OU fit repeated across sliding windows within a single recording, to test whether coupling is a fixed trait or something that shifts over the course of a day.
+
+### Phase One: The Healthy Baseline
+
+**MMASH** 24-hour continuous ECG and wrist-accelerometer recordings from 20 healthy, active adults, establishes what an undisturbed, healthy pair of systems looks like.
+
+```{=html}
+<figure style="margin:1.5rem 0;">
+  <img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/population_summary.png"
+       class="img-fluid rounded" alt="Population summary panels A through E for the MMASH cohort"
+       style="box-shadow:0 4px 16px rgba(0,0,0,0.1); width:100%;">
+  <figcaption style="font-size:0.85rem;opacity:0.75;margin-top:0.4rem;">Fig 1. Population overview across the 20-subject MMASH cohort.</figcaption>
+</figure>
+```
+
+| Metric | Value | Interpretation |
+|---|---|---|
+| Mean LF/HF ratio | 1.62 | Slight sympathetic dominance, normal for an active cohort |
+| Mean LF coherence | ~0.000 | Cardiac and locomotor systems are largely independent |
+| Mean κ_xy (loco → cardiac) | −0.00551 | Movement mildly suppresses cardiac variability |
+| Mean κ_yx (cardiac → loco) | −0.00076 | Cardiac activity barely influences movement |
+| κ_xy vs. LF/HF correlation | r = 0.436, p = 0.054 | A trend, just short of conventional significance: more coupling tracks with more sympathetic activation |
+| σ_cardiac range | 0.13 – 0.80 | Cardiac noise varies substantially between people |
+| σ_locomotor range | 0.31 – 0.39 | Locomotor noise is remarkably consistent across people |
+
+The pattern in healthy people is near-independence, not synchrony — and the small coupling that does exist is negative: movement quiets cardiac variability, consistent with vagal withdrawal during physical activity.
+
+```{=html}
+<figure style="margin:1.5rem 0;">
+  <img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/ou_phase_space_real.png"
+       class="img-fluid rounded" alt="OU model phase space showing coupled versus dissociated dynamics"
+       style="box-shadow:0 4px 16px rgba(0,0,0,0.1); width:100%;">
+  <figcaption style="font-size:0.85rem;opacity:0.75;margin-top:0.4rem;">Fig 2. Phase space of the fitted coupled OU model — near-independence is visible as dissociated, not synchronized, trajectories.</figcaption>
+</figure>
+```
+
+One subject stands apart from this pattern entirely, showing anomalously positive coupling on every metric — a single, consistent outlier rather than noise in the fit.
+
+```{=html}
+<figure style="margin:1.5rem 0;">
+  <img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/coupling_analysis.png"
+       class="img-fluid rounded" alt="OU model phase space showing coupled versus dissociated dynamics"
+       style="box-shadow:0 4px 16px rgba(0,0,0,0.1); width:100%;">
+  <figcaption style="font-size:0.85rem;opacity:0.75;margin-top:0.4rem;">Fig 3. "Fig 3. Coupling strength ranked across all subjects (left), u15 stands apart from the rest of the cohort; sympathovagal correlation and per-subject noise levels shown alongside."</figcaption>
+</figure>
+```
+
+### Phase Two: Testing It Under Stress
+
+The healthy baseline is the control condition, not the finding. The actual test of the hypothesis is whether this near-independence signature holds up when a system is under genuine physiological strain — and that's what MIMIC-IV is for. ICU waveform data (ECG-derived RR intervals and respiratory waveforms from critically ill patients) will run through the identical pipeline, asking directly: does intersystem coupling strengthen, reorganize, or break down under critical illness? That comparison is what turns this from a description of healthy physiology into a candidate diagnostic signature.
+
+
+## Notes
+
+Placeholder text. Link to the live dashboard and any documentation for partner organizations.

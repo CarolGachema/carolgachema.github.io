@@ -1,0 +1,17 @@
+---
+title: "Research"
+subtitle: "Selected research and computational analysis"
+page-layout: full
+title-block-banner: false
+listing:
+  contents: research
+  type: grid
+  grid-columns: 3
+  image-height: "210px"
+  sort: "date desc"
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, description, categories, date]
+---
+

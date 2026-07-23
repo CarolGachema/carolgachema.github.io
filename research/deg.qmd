@@ -1,0 +1,74 @@
+---
+title: "Differential Gene Expression Pipelines"
+description: "A reproducible transcriptomic analysis pipeline using GEO datasets to identify differentially expressed genes and disease-associated biological pathways in lung cancer and asthma."
+date: 2026-03-05
+categories: [Genomics, DEG analysis]
+image: "images/banner-deg.png"
+title-block-banner: "images/banner-deg.png"    
+toc: true          
+---
+
+<div class="research-links">
+  <a href="https://github.com/CarolGachema/Lung-Cancer-Analysis" class="research-btn" target="_blank">
+    <i class="bi bi-github"></i> Code
+  </a>
+</div>
+
+## Overview
+
+Differential gene expression (DGE) analysis is one of the approaches in transcriptomics, allowing researchers to identify genes whose expression changes significantly between healthy and diseased tissues. Such analyses provide insight into the molecular pathways underlying disease, identify potential biomarkers, and generate hypotheses for therapeutic intervention.
+
+This project brings together two independent investigations performed using publicly available Gene Expression Omnibus (GEO) datasets. Although focused on distinct diseases, lung adenocarcinoma and asthma, both studies followed reproducible computational pipelines implemented entirely in R, demonstrating the versatility of transcriptomic analysis across oncology and inflammatory disease.
+
+
+## Data & methods
+
+### Lung Cancer
+
+Lung cancer remains the leading cause of cancer-related mortality worldwide. Understanding transcriptional changes within tumour tissue provides insight into mechanisms of uncontrolled proliferation, extracellular matrix remodelling, immune evasion, and metastatic progression.
+
+### Asthma
+
+Asthma is characterised by chronic airway inflammation and immune dysregulation. Identifying differentially expressed genes provides insight into inflammatory signalling, epithelial remodelling, and immune cell activation that underpin disease severity.
+
+### Datasets
+
+
+*Database:* NCBI Gene Expression Omnibus (GEO)
+
+*Platform:* Affymetrix Human Genome U133 Plus 2.0
+
+*Comparison:* Lung Adenocarcinoma vs Normal Lung Tissue
+
+
+## Findings
+### Lung Cancer Findings
+
+Differential expression analysis revealed widespread transcriptional dysregulation characteristic of malignant transformation.
+
+Among the most significantly dysregulated genes were those involved in:
+
+- extracellular matrix organisation
+- cell adhesion
+- angiogenesis
+- epithelial-to-mesenchymal transition
+- cellular proliferation
+ immune signalling
+
+Functional enrichment highlighted pathways involved in tumour invasion, cancer progression, and aberrant growth signalling.
+
+These findings illustrate how transcriptomic analysis captures the systems-level biology driving lung tumour development rather than isolated gene changes alone.
+
+### Asthma Findings
+
+The asthma analysis identified numerous genes associated with chronic inflammatory responses within the airway epithelium.
+
+Enrichment analyses demonstrated overrepresentation of pathways involved in:
+
+- cytokine signalling
+- chemokine-mediated immune recruitment
+- leukocyte activation
+- epithelial barrier function
+- inflammatory response
+
+Together, these findings reflect the persistent immune activation that characterises chronic asthma and reinforce known molecular mechanisms while providing a reproducible computational framework for future investigation.
