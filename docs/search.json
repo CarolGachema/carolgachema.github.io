@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Intersystem Noise Coupling\n\n\n\nSignal Analysis\n\nInstrumentation\n\n\n\nA computational neuroscience project investigating how stochastic interactions between neural systems can produce emergent brain dynamics relevant to cognition and…\n\n\n\nJul 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPsychedelic Neuroplasticity & Pancreatic Cancer\n\n\n\nTranslational Oncology\n\nConvergence\n\nNeurotrophic Signalling\n\n\n\nPsychedelic Neuroplasticity and the Perineural Microenvironment of Pancreatic Cancer\n\n\n\nJun 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlzheimer’s Disease ML Classifier\n\n\n\nmachine learning\n\nneurodegeneration\n\ntranscriptomics\n\n\n\n\n\n\n\nMay 18, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDifferential Gene Expression Pipelines\n\n\n\nGenomics\n\nDEG analysis\n\n\n\nA reproducible transcriptomic analysis pipeline using GEO datasets to identify differentially expressed genes and disease-associated biological pathways in lung cancer and…\n\n\n\nMar 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmerging Viral Pathogens & the CNS\n\n\n\nNeurobiology\n\nZika\n\nChikungunya\n\nIGAE Conference\n\n\n\nNeuropathological Consequences of Emerging Viral Pathogens in East Africa\n\n\n\nMay 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHIV Stem Cell Cure & Sub-Saharan Africa\n\n\n\nGlobal Policy\n\nHealth Equity\n\nWHO\n\n\n\nWhy the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa\n\n\n\nMay 4, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/pdac.html",
+    "href": "research/pdac.html",
+    "title": "Psychedelic Neuroplasticity & Pancreatic Cancer",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "research/pdac.html#overview",
+    "href": "research/pdac.html#overview",
+    "title": "Psychedelic Neuroplasticity & Pancreatic Cancer",
+    "section": "Overview",
+    "text": "Overview\nNeurotrophins are essential regulators of neuronal survival, differentiation, synaptic plasticity, and axonal growth throughout development and adulthood.\nAmong their receptors:\nTrkA (NTRK1) primarily binds nerve growth factor (NGF). TrkB (NTRK2) preferentially binds brain-derived neurotrophic factor (BDNF). TrkC (NTRK3) responds mainly to neurotrophin-3 (NT-3).\nThese receptors possess distinct ligand preferences, but, their intracellular signalling networks overlap extensively.\nActivation of either TrkA or TrkB stimulates pathways involved in:\n\nCell survival\nCell proliferation\nNeuronal differentiation\nSynaptic plasticity\nCytoskeletal remodelling\nAngiogenesis\nMigration\nApoptosis resistance\n\nThese same biological programmes are frequently exploited during cancer progression.\nPancreatic cancer is particularly unusual because tumour cells actively communicate with peripheral nerves.\nPDAC establishes reciprocal signalling loops with neurons, Schwann cells, fibroblasts, immune cells, and extracellular matrix components to facilitate tumour growth and dissemination.\nNeurotrophin signalling is increasingly recognised as one of the major molecular drivers of this process.\nSimultaneously, psychedelic neuroscience has identified TrkB activation as a key mechanism underlying sustained structural plasticity following psilocybin exposure.\nThe possibility that these receptor systems coexist within pancreatic tumours therefore deserves further investigation.\n\nCurrent Progress\nAs of mid-2026, both of Compass Pathways’ pivotal Phase 3 trials of COMP360 psilocybin for treatment resistant depression (COMP005 and COMP006) have met their primary endpoints, with a durable benefit reported through at least six months and a generally well tolerated safety profile. An FDA filing is targeted for Q4 2026.\nClinical trials testing psilocybin assisted therapy for cancer-related psychological distress have existed for close to a decade already; a regulatory approval for psilocybin in any indication makes it dramatically more likely that patients carrying both a depression diagnosis and a PDAC diagnosis will be offered, or will seek out, this treatment."
+  },
+  {
+    "objectID": "research/pdac.html#data-methods",
+    "href": "research/pdac.html#data-methods",
+    "title": "Psychedelic Neuroplasticity & Pancreatic Cancer",
+    "section": "Data & methods",
+    "text": "Data & methods\n\nGene set enrichment analysis (GSEA) testing whether neurotrophin-associated expression programs linked to TrkB/plasticity biology show a parallel signature in PDAC tumour tissue\nValidation cohort: TCGA-PAAD, 182 primary pancreatic tumour samples with matched clinical and survival data\nSurvival analysis (Kaplan-Meier) to test whether pathway activity predicts patient outcomes, not just differential expression\nAnalysis conducted in R"
+  },
+  {
+    "objectID": "research/pdac.html#findings",
+    "href": "research/pdac.html#findings",
+    "title": "Psychedelic Neuroplasticity & Pancreatic Cancer",
+    "section": "Findings",
+    "text": "Findings\n\nExpression and co-expression\n\n\n\n\n\n\nFigure 1: NTRK1/NTRK2 expression distribution across TCGA-PAAD\n\n\n\n\n\n\n\n\n\nFigure 2: NTRK1–NTRK2 co-expression\n\n\n\nBoth receptors are detectable across the cohort, but NTRK1 is expressed substantially higher and more variably (median log₂ = 0.95) than NTRK2 (median log₂ = 0.32), with a right skewed tail of high-TrkA outlier tumors, consistent with TrkA’s established, active role in driving perineural invasion in a subset of aggressive tumors.\nNTRK2 is the more interesting number precisely because it’s lower. TrkB is not a gene you’d expect to see much of outside brain tissue at all, finding it reliably expressed in a solid pancreatic tumor sample is\n\n\nSurvival analysis\n\n\n\n\n\n\nKaplan-Meier survival, NTRK2 expression\n\n\n\n\n\n\n\nKaplan-Meier survival, NTRK1 expression\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Stage-adjusted forest plot, NTRK2\n\n\n\nNeither gene showed a statistically significant association with overall survival at median-split dichotomization. A stage-adjusted, continuous Cox model for NTRK2 showed a similar non-significant trend (per-unit HR = 0.92, 95% CI 0.81–1.0, p = 0.166).\n\n\nPathway enrichment\n\n\n\n\n\n\nFigure 4: GSEA KEGG enrichment overview\n\n\n\n\n\n\n\n\n\nMAPK signaling pathway enrichment (hsa04010)\n\n\n\n\n\n\n\nPI3K-Akt signaling pathway enrichment (hsa04151)\n\n\n\n\n\nRanking every gene in the genome by its correlation with NTRK2 expression surfaced a coherent pattern. Tumors with higher NTRK2 showed enrichment for neuroactive ligand signaling, cell adhesion, pancreatic secretion, and hematopoietic lineage pathways, and in the opposite direction, depletion of core proliferation machinery, the proteasome, ribosome, cell cycle, and DNA replication/repair pathways.\nPut together, that reads as, tumors with more NTRK2 signal look less proliferative and more differentiated, or more accurately, more neurally, and microenvironment associated, which fits the interpretation above.\nInside that pattern, the two pathways this project actually set out to check MAPK and PI3K-Akt, the shared downstream architecture between TrkA and TrkB."
+  },
+  {
+    "objectID": "research/hiv.html",
+    "href": "research/hiv.html",
+    "title": "HIV Stem Cell Cure & Sub-Saharan Africa",
+    "section": "",
+    "text": "The remarkable success of stem-cell-mediated HIV cure strategies has generated worldwide optimism.\nHowever, nearly all reported cures have depended upon donors carrying the CCR5Δ32 mutation a genetic variant that is exceptionally rare within African populations.\nThis paper examines the implications of this disparity for global health equity.\nRather than focusing solely on molecular biology, the work combines genetics, epidemiology, ethics, and health policy to ask whether current HIV cure research adequately reflects the populations most affected by HIV."
+  },
+  {
+    "objectID": "research/hiv.html#overview",
+    "href": "research/hiv.html#overview",
+    "title": "HIV Stem Cell Cure & Sub-Saharan Africa",
+    "section": "",
+    "text": "The remarkable success of stem-cell-mediated HIV cure strategies has generated worldwide optimism.\nHowever, nearly all reported cures have depended upon donors carrying the CCR5Δ32 mutation a genetic variant that is exceptionally rare within African populations.\nThis paper examines the implications of this disparity for global health equity.\nRather than focusing solely on molecular biology, the work combines genetics, epidemiology, ethics, and health policy to ask whether current HIV cure research adequately reflects the populations most affected by HIV."
+  },
+  {
+    "objectID": "research/hiv.html#themes",
+    "href": "research/hiv.html#themes",
+    "title": "HIV Stem Cell Cure & Sub-Saharan Africa",
+    "section": "Themes",
+    "text": "Themes\n\nPopulation genetics\nHIV biology\nScientific equity\nGlobal health policy\nResearch accessibility"
+  },
+  {
+    "objectID": "research/hiv.html#abstract",
+    "href": "research/hiv.html#abstract",
+    "title": "HIV Stem Cell Cure & Sub-Saharan Africa",
+    "section": "Abstract",
+    "text": "Abstract\nThe allogeneic hematopoietic stem cell transplantation (allo-HSCT) cure for Human Immunodeficiency Virus (HIV), achieved serendipitously through cancer treatment in a small number of individuals in Europe and North America, has been acclaimed globally as a landmark proof of concept. However, the scientific community’s celebration of this development obscures a critical and largely unaddressed structural problem: the cure’s underlying mechanism which is the CCR5Δ32 homozygous genetic mutation is virtually absent in Sub-Saharan African (SSA) populations, who bear over two thirds of the global HIV burden. This paper argues that the stem cell cure, as currently constituted, is almost entirely irrelevant to Sub-Saharan Africa on three compounding grounds.\n\nThe near-complete absence of the CCR5Δ32 allele in SSA populations renders donor matching biologically impractical.\nThe procedure’s extreme cost, complexity, and infrastructural demands make it logistically unfeasible in low and middle income country (LMIC) health systems.\nThe cure was not intentionally designed for the global HIV crisis, it emerged accidentally from oncological care of a single White American patient in Berlin. Despite mounting evidence from subsequent cases, no coordinated international effort is actively developing a scalable, SSA-relevant cure pathway.\n\nThis paper calls on the World Health Organization to redirect research funding and policy attention toward scalable, population-appropriate HIV cure strategies."
+  },
+  {
+    "objectID": "research/alzheimers.html",
+    "href": "research/alzheimers.html",
+    "title": "Alzheimer’s Disease ML Classifier",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "research/alzheimers.html#overview",
+    "href": "research/alzheimers.html#overview",
+    "title": "Alzheimer’s Disease ML Classifier",
+    "section": "Overview",
+    "text": "Overview\nGene expression studies have shown that Alzheimer’s disease affects thousands of genes simultaneously, influencing neuronal metabolism, mitochondrial function, synaptic signalling, cytoskeletal organisation, protein degradation, and immune activation.\nNetwork biology provides a powerful framework for doing exactly this. Within biological networks, some genes occupy central positions, interacting with numerous partners and coordinating essential cellular processes.\nThese hub genes often exert disproportionate influence over disease progression and therefore represent attractive therapeutic targets.\nMachine learning offers another complementary perspective.Predictive models ask whether combinations of molecular features are sufficiently informative to classify disease status. If successful, such approaches provide evidence that underlying biological signals are statistically and biologically meaningful."
+  },
+  {
+    "objectID": "research/alzheimers.html#data-methods",
+    "href": "research/alzheimers.html#data-methods",
+    "title": "Alzheimer’s Disease ML Classifier",
+    "section": "Data & methods",
+    "text": "Data & methods\nAll analyses were performed using publicly available transcriptomic datasets obtained from the NCBI Gene Expression Omnibus (GEO).\n\nAccession: GSE5281\nPlatform: GPL570 (Affymetrix Human Genome U133 Plus 2.0 Array)\nSamples: Alzheimer’s disease and neurologically healthy control brain tissue\n\nThe dataset includes expression profiles from multiple anatomically distinct brain regions, allowing investigation of disease-associated molecular changes across the central nervous system.\n\nTranscriptomic expression data from [GSE5281] comparing Alzheimer’s disease cases to cognitively normal controls.\nGene co-expression network analysis (protein-protein interaction network) used to identify hub genes most central to disease associated modules.\nHub genes carried forward as the feature set for a Random Forest classifier, implemented in Python (scikit-learn).\nModel performance assessed via cross validation to avoid overfitting to a single train/test split.\n\n\n\n\n\n\n\nFigure 1: Network module analysis identifying Alzheimer’s-associated hub genes\n\n\n\nThe full analysis pipeline and code are released openly on GitHub for reproducibility."
+  },
+  {
+    "objectID": "research/alzheimers.html#findings",
+    "href": "research/alzheimers.html#findings",
+    "title": "Alzheimer’s Disease ML Classifier",
+    "section": "Findings",
+    "text": "Findings\nThe Random Forest classifier achieved 90.7% cross-validation accuracy in distinguishing Alzheimer’s disease from cognitively normal controls using only the hub-gene feature set. This supports the core hypothesis: network-derived hub genes carry enough disease relevant signal to drive accurate classification on their own.\n\n\n\n\n\n\nFeature importance ranking of top hub genes\n\n\n\n\n\n\n\nConfusion matrix on held-out test data"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "The Brain’s endless questions\n\n\n\nsystems\n\nneuroscience\n\nneurobiology\n\n\n\nOn complexity and connectomics\n\n\n\n\n\nJul 23, 2026\n\n1 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Caroline Gachema",
+    "section": "",
+    "text": "Biomedical Scientist & Bioinformatician\n\n  \n\n\n\n\n\nI explore the molecular mechanisms that connect different disciplines.\nMy work combines publicly available genomic data, statistical modelling, and systems biology to investigate hypotheses that are often overlooked by conventional disciplinary boundaries.\nI aim to produce research that is both computationally rigorous and biologically meaningful.\n\n BSc. Biomedical Science and Technology\n\n\n Bioinformatics and Nanotechnology\n\n\n NUITM BSL-3/P3"
+  },
+  {
+    "objectID": "index.html#hi-thanks-for-stopping-by",
+    "href": "index.html#hi-thanks-for-stopping-by",
+    "title": "Caroline Gachema",
+    "section": "",
+    "text": "I explore the molecular mechanisms that connect different disciplines.\nMy work combines publicly available genomic data, statistical modelling, and systems biology to investigate hypotheses that are often overlooked by conventional disciplinary boundaries.\nI aim to produce research that is both computationally rigorous and biologically meaningful.\n\n BSc. Biomedical Science and Technology\n\n\n Bioinformatics and Nanotechnology\n\n\n NUITM BSL-3/P3"
+  },
+  {
+    "objectID": "research/deg.html",
+    "href": "research/deg.html",
+    "title": "Differential Gene Expression Pipelines",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "research/deg.html#overview",
+    "href": "research/deg.html#overview",
+    "title": "Differential Gene Expression Pipelines",
+    "section": "Overview",
+    "text": "Overview\nDifferential gene expression (DGE) analysis is one of the approaches in transcriptomics, allowing researchers to identify genes whose expression changes significantly between healthy and diseased tissues. Such analyses provide insight into the molecular pathways underlying disease, identify potential biomarkers, and generate hypotheses for therapeutic intervention.\nThis project brings together two independent investigations performed using publicly available Gene Expression Omnibus (GEO) datasets. Although focused on distinct diseases, lung adenocarcinoma and asthma, both studies followed reproducible computational pipelines implemented entirely in R, demonstrating the versatility of transcriptomic analysis across oncology and inflammatory disease."
+  },
+  {
+    "objectID": "research/deg.html#data-methods",
+    "href": "research/deg.html#data-methods",
+    "title": "Differential Gene Expression Pipelines",
+    "section": "Data & methods",
+    "text": "Data & methods\n\nLung Cancer\nLung cancer remains the leading cause of cancer-related mortality worldwide. Understanding transcriptional changes within tumour tissue provides insight into mechanisms of uncontrolled proliferation, extracellular matrix remodelling, immune evasion, and metastatic progression.\n\n\nAsthma\nAsthma is characterised by chronic airway inflammation and immune dysregulation. Identifying differentially expressed genes provides insight into inflammatory signalling, epithelial remodelling, and immune cell activation that underpin disease severity.\n\n\nDatasets\nDatabase: NCBI Gene Expression Omnibus (GEO)\nPlatform: Affymetrix Human Genome U133 Plus 2.0\nComparison: Lung Adenocarcinoma vs Normal Lung Tissue"
+  },
+  {
+    "objectID": "research/deg.html#findings",
+    "href": "research/deg.html#findings",
+    "title": "Differential Gene Expression Pipelines",
+    "section": "Findings",
+    "text": "Findings\n\nLung Cancer Findings\nDifferential expression analysis revealed widespread transcriptional dysregulation characteristic of malignant transformation.\nAmong the most significantly dysregulated genes were those involved in:\n\nextracellular matrix organisation\ncell adhesion\nangiogenesis\nepithelial-to-mesenchymal transition\ncellular proliferation immune signalling\n\nFunctional enrichment highlighted pathways involved in tumour invasion, cancer progression, and aberrant growth signalling.\nThese findings illustrate how transcriptomic analysis captures the systems-level biology driving lung tumour development rather than isolated gene changes alone.\n\n\nAsthma Findings\nThe asthma analysis identified numerous genes associated with chronic inflammatory responses within the airway epithelium.\nEnrichment analyses demonstrated overrepresentation of pathways involved in:\n\ncytokine signalling\nchemokine-mediated immune recruitment\nleukocyte activation\nepithelial barrier function\ninflammatory response\n\nTogether, these findings reflect the persistent immune activation that characterises chronic asthma and reinforce known molecular mechanisms while providing a reproducible computational framework for future investigation."
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html",
+    "href": "research/intersystem-noise-coupling.html",
+    "title": "Intersystem Noise Coupling",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html#overview",
+    "href": "research/intersystem-noise-coupling.html#overview",
+    "title": "Intersystem Noise Coupling",
+    "section": "Overview",
+    "text": "Overview\nThe Intersystem Noise Coupling project proposes that independent biological systems become functionally coupled through structured fluctuations in activity.\nInstead of viewing neural networks as deterministic processors exchanging only explicit signals, INC suggests that communication also occurs through coordinated modulation of variability.\nThese fluctuations exhibit statistical structure capable of synchronizing distributed biological systems without requiring rigid connectivity."
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html#conceptual-framework",
+    "href": "research/intersystem-noise-coupling.html#conceptual-framework",
+    "title": "Intersystem Noise Coupling",
+    "section": "Conceptual Framework",
+    "text": "Conceptual Framework\nThe human body consists of multiple interacting systems.\nINC proposes, rather than relying exclusively on physical connectivity, systems may transiently coordinate through correlated stochastic dynamics.When variability becomes synchronised across multiple systems, information exchange becomes more efficient, allowing distributed networks to behave as integrated functional units."
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html#relationship-to-existing-science",
+    "href": "research/intersystem-noise-coupling.html#relationship-to-existing-science",
+    "title": "Intersystem Noise Coupling",
+    "section": "Relationship to Existing Science",
+    "text": "Relationship to Existing Science\nThe framework draws inspiration from several established concepts\n\nNeural Synchrony\nLarge-scale synchronisation of oscillatory activity has long been associated with attention, perception, and conscious awareness.\n\n\nCritical Brain Dynamics\nMany researchers argue that healthy brains operate near a critical state balancing stability and flexibility.Small fluctuations can propagate throughout the network, producing maximal computational efficiency.Structured noise coupling may represent one mechanism by which brains maintain this critical operating regime.\n\n\nPredictive Processing\nPredictive coding proposes that brains continuously minimise prediction error. INC suggests that variability itself may encode uncertainty, allowing prediction errors to propagate through dynamically coupled networks.\n\n\nComplexity Theory\nComplex adaptive systems frequently exhibit emergent behaviour through interactions among individually simple components.\nNoise coupling provides a potential biological mechanism supporting emergence across neural systems."
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html#data-methods",
+    "href": "research/intersystem-noise-coupling.html#data-methods",
+    "title": "Intersystem Noise Coupling",
+    "section": "Data & methods",
+    "text": "Data & methods\n\nSignal extraction — RR intervals from ECG for the cardiac signal, accelerometer magnitude (√x²+y²+z²) for the locomotor signal, both resampled onto a shared 4 Hz grid so the two are directly comparable.\nFrequency-domain analysis — power spectral density of heart rate variability, split into low-frequency (0.04–0.15 Hz) and high-frequency (0.15–0.40 Hz) bands, with their ratio used as an index of sympathovagal balance.\nCross-organ coherence — spectral coherence between the cardiac and locomotor signals, to identify which frequencies, if any, the two systems synchronize at.\nCoupled OU model fitting — the core model:\n\ndX = θ_x(−X)dt + κ_xy·Y·dt + σ_x·dW_x    (cardiac)\ndY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)\nκ_xy and κ_yx capture directional coupling strength — locomotion→cardiac and cardiac→locomotion respectively — σ_x and σ_y the intrinsic noise level of each system, θ_x and θ_y how fast each reverts to its own baseline. Parameters are fit per subject by least-squares regression on the discretized derivatives.\n\nTransfer entropy — a model-free, information-theoretic check on the same question: how much knowing one system’s past reduces uncertainty about the other’s future, without assuming the linear relationship the OU model does.\nWindowed coupling — the same OU fit repeated across sliding windows within a single recording, to test whether coupling is a fixed trait or something that shifts over the course of a day.\n\n\nPhase One: The Healthy Baseline\nMMASH 24-hour continuous ECG and wrist-accelerometer recordings from 20 healthy, active adults, establishes what an undisturbed, healthy pair of systems looks like.\n\n  \n  Fig 1. Population overview across the 20-subject MMASH cohort.\n\n\n\n\n\n\n\n\n\nMetric\nValue\nInterpretation\n\n\n\n\nMean LF/HF ratio\n1.62\nSlight sympathetic dominance, normal for an active cohort\n\n\nMean LF coherence\n~0.000\nCardiac and locomotor systems are largely independent\n\n\nMean κ_xy (loco → cardiac)\n−0.00551\nMovement mildly suppresses cardiac variability\n\n\nMean κ_yx (cardiac → loco)\n−0.00076\nCardiac activity barely influences movement\n\n\nκ_xy vs. LF/HF correlation\nr = 0.436, p = 0.054\nA trend, just short of conventional significance: more coupling tracks with more sympathetic activation\n\n\nσ_cardiac range\n0.13 – 0.80\nCardiac noise varies substantially between people\n\n\nσ_locomotor range\n0.31 – 0.39\nLocomotor noise is remarkably consistent across people\n\n\n\nThe pattern in healthy people is near-independence, not synchrony — and the small coupling that does exist is negative: movement quiets cardiac variability, consistent with vagal withdrawal during physical activity.\n\n  \n  Fig 2. Phase space of the fitted coupled OU model — near-independence is visible as dissociated, not synchronized, trajectories.\n\nOne subject stands apart from this pattern entirely, showing anomalously positive coupling on every metric — a single, consistent outlier rather than noise in the fit.\n\n  \n  Fig 3. \"Fig 3. Coupling strength ranked across all subjects (left), u15 stands apart from the rest of the cohort; sympathovagal correlation and per-subject noise levels shown alongside.\"\n\n\n\nPhase Two: Testing It Under Stress\nThe healthy baseline is the control condition, not the finding. The actual test of the hypothesis is whether this near-independence signature holds up when a system is under genuine physiological strain — and that’s what MIMIC-IV is for. ICU waveform data (ECG-derived RR intervals and respiratory waveforms from critically ill patients) will run through the identical pipeline, asking directly: does intersystem coupling strengthen, reorganize, or break down under critical illness? That comparison is what turns this from a description of healthy physiology into a candidate diagnostic signature."
+  },
+  {
+    "objectID": "research/intersystem-noise-coupling.html#notes",
+    "href": "research/intersystem-noise-coupling.html#notes",
+    "title": "Intersystem Noise Coupling",
+    "section": "Notes",
+    "text": "Notes\nPlaceholder text. Link to the live dashboard and any documentation for partner organizations."
+  },
+  {
+    "objectID": "research/viral-cns.html",
+    "href": "research/viral-cns.html",
+    "title": "Emerging Viral Pathogens & the CNS",
+    "section": "",
+    "text": "Historically, neurological complications were viewed as relatively uncommon consequences of viral infection. Clinical management understandably prioritized survival during acute disease, particularly in high-fatality outbreaks such as Ebola virus disease or Marburg virus disease.\nHowever, advances in molecular virology, neuroimmunology, and neuroimaging have begun challenging this assumption.\nA growing number of studies demonstrate that viruses need not directly destroy neurons to produce lasting neurological dysfunction. Instead, damage frequently arises through indirect mechanisms including excessive immune activation, chronic inflammation, endothelial dysfunction, autoimmune responses, microglial activation, vascular injury, and prolonged disruption of neural homeostasis.\nThe COVID-19 pandemic accelerated this shift in understanding. Reports of persistent cognitive dysfunction (“brain fog”), depression, anxiety, anosmia, stroke, encephalopathy, and neurodegeneration following SARS-CoV-2 infection demonstrated that neurological sequelae could become major contributors to disease burden even after viral clearance."
+  },
+  {
+    "objectID": "research/viral-cns.html#overview",
+    "href": "research/viral-cns.html#overview",
+    "title": "Emerging Viral Pathogens & the CNS",
+    "section": "",
+    "text": "Historically, neurological complications were viewed as relatively uncommon consequences of viral infection. Clinical management understandably prioritized survival during acute disease, particularly in high-fatality outbreaks such as Ebola virus disease or Marburg virus disease.\nHowever, advances in molecular virology, neuroimmunology, and neuroimaging have begun challenging this assumption.\nA growing number of studies demonstrate that viruses need not directly destroy neurons to produce lasting neurological dysfunction. Instead, damage frequently arises through indirect mechanisms including excessive immune activation, chronic inflammation, endothelial dysfunction, autoimmune responses, microglial activation, vascular injury, and prolonged disruption of neural homeostasis.\nThe COVID-19 pandemic accelerated this shift in understanding. Reports of persistent cognitive dysfunction (“brain fog”), depression, anxiety, anosmia, stroke, encephalopathy, and neurodegeneration following SARS-CoV-2 infection demonstrated that neurological sequelae could become major contributors to disease burden even after viral clearance."
+  },
+  {
+    "objectID": "research/viral-cns.html#abstract",
+    "href": "research/viral-cns.html#abstract",
+    "title": "Emerging Viral Pathogens & the CNS",
+    "section": "Abstract",
+    "text": "Abstract\nAs the landscape of infectious diseases in East Africa continues to shift under the pressure of ecological disruption, climate change, and rapid urbanization, the clinical focus of regional health systems remains disproportionately concentrated on acute systemic manifestations of viral disease. The long term neurological implications of emerging and re-emerging viral pathogens, particularly Zika virus, Chikungunya virus, and Rift Valley Fever virus, remain critically under-investigated in the East African context. This paper presents a narrative synthesis of existing literature on the molecular and histopathological mechanisms by which these pathogens bypass the blood-brain barrier (BBB) to induce neuroinflammation and chronic cellular damage. Drawing on documented outbreak data from Kenya, Tanzania, Somalia, Uganda, and Sudan, alongside current understanding of viral neurotropism and BBB biology, this review identifies a growing ‘silent pandemic’ of post-viral neurological sequelae that threatens to impose a substantial and largely invisible burden on the region’s public health systems. The findings underscore the urgent need for integrating neuro-diagnostic protocols into standard infectious disease surveillance frameworks in East Africa, and highlight the significant opportunity that bioinformatics driven approaches to mapping viral neurotropism offer for the development of targeted CNS therapeutics. Strengthening the intersection between clinical pathology, neurobiology, and computational biology is identified as essential for pandemic preparedness and long-term neurological health in the region."
+  },
+  {
+    "objectID": "research/viral-cns.html#notes",
+    "href": "research/viral-cns.html#notes",
+    "title": "Emerging Viral Pathogens & the CNS",
+    "section": "Notes",
+    "text": "Notes\nBanner image adapted from DosSantos et al. (2014), Frontiers in Cellular Neuroscience, licensed under CC BY. https://doi.org/10.3389/fncel.2014.00302"
+  }
+]
