@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/mapping-neighborhood-change.html"
+    ]
+  },
+  {
     "listing": "/research.html",
     "items": [
       "/research/intersystem-noise-coupling.html",
@@ -8,12 +14,6 @@
       "/research/deg.html",
       "/research/viral-cns.html",
       "/research/hiv.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/mapping-neighborhood-change.html"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Caroline Gachema</title>
+<title>Caroline Gachema</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./logo.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,69 +73,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -325,7 +265,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -341,221 +281,37 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Research</h1>
-<p class="subtitle lead">Selected research and computational analysis</p>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 
+<div class="hero-grid">
+<div class="hero-photo-col">
+<div class="hero-photo-frame">
+<p><img src="images/story-portrait.svg" class="img-fluid" alt="Illustration of a DNA double helix"></p>
+</div>
+<div class="hero-icons">
+<p><a href="https://github.com/CarolGachema" aria-label="GitHub"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/caroline-gachema-67181a2b8/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> <a href="mailto:gachemacarol@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a></p>
+</div>
+</div>
+<section id="science-is-a-way-of-seeing-the-world" class="level2 hero-intro-col">
+<h2 class="anchored" data-anchor-id="science-is-a-way-of-seeing-the-world">Science is a way of seeing the world</h2>
+<p>The pursuit of knowledge has always been one of humanity’s defining characteristics. Curiosity drives us to question the natural world and search for explanations beyond the obvious. Science is a disciplined way of understanding reality through observation, evidence and endless inquiries.</p>
+<p>Today, scientific discoveries shape nearly every aspect of our lives. Yet, beyond its practical impact, science remains a profoundly human endeavor, driven by as much as reason, persistence and intellect.</p>
+<p>Long live science!</p>
+</section>
+</div>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="U2lnbmFsJTIwQW5hbHlzaXMlMkNJbnN0cnVtZW50YXRpb24=" data-listing-date-sort="1784754000000" data-listing-file-modified-sort="1784875292878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
-<a href="./research/intersystem-noise-coupling.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-noise.webp" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Intersystem Noise Coupling
-</h5>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('U2lnbmFsJTIwQW5hbHlzaXM='); return false;">Signal Analysis</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zdHJ1bWVudGF0aW9u'); return false;">Instrumentation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A computational neuroscience project investigating how stochastic interactions between neural systems can produce emergent brain dynamics relevant to cognition and…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 23, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VHJhbnNsYXRpb25hbCUyME9uY29sb2d5JTJDQ29udmVyZ2VuY2UlMkNOZXVyb3Ryb3BoaWMlMjBTaWduYWxsaW5n" data-listing-date-sort="1781643600000" data-listing-file-modified-sort="1784829687328" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
-<a href="./research/pdac.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-pdac.jpg" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Psychedelic Neuroplasticity &amp; Pancreatic Cancer
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJhbnNsYXRpb25hbCUyME9uY29sb2d5'); return false;">Translational Oncology</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29udmVyZ2VuY2U='); return false;">Convergence</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TmV1cm90cm9waGljJTIwU2lnbmFsbGluZw=='); return false;">Neurotrophic Signalling</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Psychedelic Neuroplasticity and the Perineural Microenvironment of Pancreatic Cancer</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 17, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDbmV1cm9kZWdlbmVyYXRpb24lMkN0cmFuc2NyaXB0b21pY3M=" data-listing-date-sort="1779051600000" data-listing-file-modified-sort="1784875321902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="330">
-<a href="./research/alzheimers.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-alzheimers.png" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Alzheimer’s Disease ML Classifier
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV1cm9kZWdlbmVyYXRpb24='); return false;">neurodegeneration</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNjcmlwdG9taWNz'); return false;">transcriptomics</div>
-
-</div>
-<div class="card-text listing-description delink">
- <i class="bi bi-github"></i> Code 
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 18, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="R2Vub21pY3MlMkNERUclMjBhbmFseXNpcw==" data-listing-date-sort="1772658000000" data-listing-file-modified-sort="1784829612617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
-<a href="./research/deg.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-deg.png" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Differential Gene Expression Pipelines
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2Vub21pY3M='); return false;">Genomics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('REVHJTIwYW5hbHlzaXM='); return false;">DEG analysis</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A reproducible transcriptomic analysis pipeline using GEO datasets to identify differentially expressed genes and disease-associated biological pathways in lung cancer and…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 5, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="TmV1cm9iaW9sb2d5JTJDWmlrYSUyQ0NoaWt1bmd1bnlhJTJDSUdBRSUyMENvbmZlcmVuY2U=" data-listing-date-sort="1748552400000" data-listing-file-modified-sort="1784829541021" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
-<a href="./research/viral-cns.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-cns.jpg" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Emerging Viral Pathogens &amp; the CNS
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TmV1cm9iaW9sb2d5'); return false;">Neurobiology</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('WmlrYQ=='); return false;">Zika</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hpa3VuZ3VueWE='); return false;">Chikungunya</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SUdBRSUyMENvbmZlcmVuY2U='); return false;">IGAE Conference</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Neuropathological Consequences of Emerging Viral Pathogens in East Africa</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 30, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="R2xvYmFsJTIwUG9saWN5JTJDSGVhbHRoJTIwRXF1aXR5JTJDV0hP" data-listing-date-sort="1746306000000" data-listing-file-modified-sort="1784873815887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
-<a href="./research/hiv.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./research/images/banner-hiv.jpg" class="thumbnail-image card-img" style="height: 210px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-HIV Stem Cell Cure &amp; Sub-Saharan Africa
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2xvYmFsJTIwUG9saWN5'); return false;">Global Policy</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoJTIwRXF1aXR5'); return false;">Health Equity</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('V0hP'); return false;">WHO</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Why the HIV Stem Cell Cure Is Nearly Irrelevant for Sub-Saharan Africa</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 4, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
