@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f5bf6a8ff884d5f133f235c8a1aac1dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4857a87a2e3efc1a2cae9cba4bee5e8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-915018f49e62dc98d1b2d78e8d715e40.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f5bf6a8ff884d5f133f235c8a1aac1dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4857a87a2e3efc1a2cae9cba4bee5e8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,6 +92,7 @@ background-image: url(images/banner-alzheimers.png);
 background-size: cover;
       }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
 </head>
@@ -375,7 +376,7 @@ background-size: cover;
 <li><strong>Hub genes</strong> carried forward as the feature set for a Random Forest classifier, implemented in Python (scikit-learn).</li>
 <li><strong>Model performance</strong> assessed via cross validation to avoid overfitting to a single train/test split.</li>
 </ul>
-<div id="fig-network" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gene co-expression network with hub genes highlighted" data-fig-align="center">
+<div id="fig-network" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Gene co-expression network with hub genes highlighted">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/network_plot_AD.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Gene co-expression network with hub genes highlighted">
@@ -501,7 +502,7 @@ Figure&nbsp;1: Network module analysis identifying Alzheimer’s-associated hub 
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.com");
+        var filterRegex = new RegExp("https:\/\/carolgachema\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

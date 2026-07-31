@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-07-23">
-<meta name="description" content="A computational neuroscience project investigating how stochastic interactions between neural systems can produce emergent brain dynamics relevant to cognition and psychiatric disorders.">
+<meta name="description" content="A computational project investigating how stochastic interactions between body systems can produce emergent brain dynamics relevant to cognition and psychiatric disorders.">
 
 <title>Intersystem Noise Coupling – Caroline Gachema</title>
 <style>
@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f5bf6a8ff884d5f133f235c8a1aac1dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4857a87a2e3efc1a2cae9cba4bee5e8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-915018f49e62dc98d1b2d78e8d715e40.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f5bf6a8ff884d5f133f235c8a1aac1dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4857a87a2e3efc1a2cae9cba4bee5e8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,6 +93,7 @@ background-image: url(images/banner-noisecoupling.png);
 background-size: cover;
       }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
 </head>
@@ -307,7 +308,7 @@ background-size: cover;
       <h1 class="title">Intersystem Noise Coupling</h1>
                   <div>
         <div class="description">
-          A computational neuroscience project investigating how stochastic interactions between neural systems can produce emergent brain dynamics relevant to cognition and psychiatric disorders.
+          A computational project investigating how stochastic interactions between body systems can produce emergent brain dynamics relevant to cognition and psychiatric disorders.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -354,7 +355,6 @@ background-size: cover;
   <li><a href="#phase-one-the-healthy-baseline" id="toc-phase-one-the-healthy-baseline" class="nav-link" data-scroll-target="#phase-one-the-healthy-baseline">Phase One: The Healthy Baseline</a></li>
   <li><a href="#phase-two-testing-it-under-stress" id="toc-phase-two-testing-it-under-stress" class="nav-link" data-scroll-target="#phase-two-testing-it-under-stress">Phase Two: Testing It Under Stress</a></li>
   </ul></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 </nav>
     </div>
@@ -378,7 +378,7 @@ background-size: cover;
 <section id="conceptual-framework" class="level2">
 <h2 class="anchored" data-anchor-id="conceptual-framework">Conceptual Framework</h2>
 <p>The human body consists of multiple interacting systems.</p>
-<p>INC proposes, rather than relying exclusively on physical connectivity, systems may transiently coordinate through correlated stochastic dynamics.When variability becomes synchronised across multiple systems, information exchange becomes more efficient, allowing distributed networks to behave as integrated functional units.</p>
+<p>INC proposes, rather than relying exclusively on physical connectivity, systems may transiently coordinate through correlated stochastic dynamics.When variability becomes synchronized across multiple systems, information exchange becomes more efficient, allowing distributed networks to behave as integrated functional units.</p>
 </section>
 <section id="relationship-to-existing-science" class="level2">
 <h2 class="anchored" data-anchor-id="relationship-to-existing-science">Relationship to Existing Science</h2>
@@ -404,17 +404,17 @@ background-size: cover;
 <section id="data-methods" class="level2">
 <h2 class="anchored" data-anchor-id="data-methods">Data &amp; methods</h2>
 <ol type="1">
-<li><p><strong>Signal extraction</strong> — RR intervals from ECG for the cardiac signal, accelerometer magnitude (√x²+y²+z²) for the locomotor signal, both resampled onto a shared 4 Hz grid so the two are directly comparable.</p></li>
-<li><p><strong>Frequency-domain analysis</strong> — power spectral density of heart rate variability, split into low-frequency (0.04–0.15 Hz) and high-frequency (0.15–0.40 Hz) bands, with their ratio used as an index of sympathovagal balance.</p></li>
-<li><p><strong>Cross-organ coherence</strong> — spectral coherence between the cardiac and locomotor signals, to identify which frequencies, if any, the two systems synchronize at.</p></li>
-<li><p><strong>Coupled OU model fitting</strong> — the core model:</p></li>
+<li><p><strong>Signal extraction</strong> - RR intervals from ECG for the cardiac signal, accelerometer magnitude (√x²+y²+z²) for the locomotor signal, both resampled onto a shared 4 Hz grid so the two are directly comparable.</p></li>
+<li><p><strong>Frequency-domain analysis</strong> - power spectral density of heart rate variability, split into low-frequency (0.04–0.15 Hz) and high-frequency (0.15–0.40 Hz) bands, with their ratio used as an index of sympathovagal balance.</p></li>
+<li><p><strong>Cross-organ coherence</strong> - spectral coherence between the cardiac and locomotor signals, to identify which frequencies, if any, the two systems synchronize at.</p></li>
+<li><p><strong>Coupled OU model fitting</strong> - the core model:</p></li>
 </ol>
 <pre><code>dX = θ_x(−X)dt + κ_xy·Y·dt + σ_x·dW_x    (cardiac)
 dY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)</code></pre>
 <p>κ_xy and κ_yx capture directional coupling strength — locomotion→cardiac and cardiac→locomotion respectively — σ_x and σ_y the intrinsic noise level of each system, θ_x and θ_y how fast each reverts to its own baseline. Parameters are fit per subject by least-squares regression on the discretized derivatives.</p>
 <ol start="5" type="1">
-<li><p><strong>Transfer entropy</strong> — a model-free, information-theoretic check on the same question: how much knowing one system’s past reduces uncertainty about the other’s future, without assuming the linear relationship the OU model does.</p></li>
-<li><p><strong>Windowed coupling</strong> — the same OU fit repeated across sliding windows within a single recording, to test whether coupling is a fixed trait or something that shifts over the course of a day.</p></li>
+<li><p><strong>Transfer entropy</strong> - a model-free, information-theoretic check on the same question: how much knowing one system’s past reduces uncertainty about the other’s future, without assuming the linear relationship the OU model does.</p></li>
+<li><p><strong>Windowed coupling</strong> - the same OU fit repeated across sliding windows within a single recording, to test whether coupling is a fixed trait or something that shifts over the course of a day.</p></li>
 </ol>
 <section id="phase-one-the-healthy-baseline" class="level3">
 <h3 class="anchored" data-anchor-id="phase-one-the-healthy-baseline">Phase One: The Healthy Baseline</h3>
@@ -474,12 +474,12 @@ dY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)</code></pre>
 </tr>
 </tbody>
 </table>
-<p>The pattern in healthy people is near-independence, not synchrony — and the small coupling that does exist is negative: movement quiets cardiac variability, consistent with vagal withdrawal during physical activity.</p>
+<p>The pattern in healthy people is near-independence, and the small coupling that does exist is negative, movement quiets cardiac variability, consistent with vagal withdrawal during physical activity.</p>
 <figure style="margin:1.5rem 0;" class="figure">
   <img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/ou_phase_space_real.png" class="img-fluid rounded figure-img" alt="OU model phase space showing coupled versus dissociated dynamics" style="box-shadow:0 4px 16px rgba(0,0,0,0.1); width:100%;">
   <figcaption style="font-size:0.85rem;opacity:0.75;margin-top:0.4rem;">Fig 2. Phase space of the fitted coupled OU model — near-independence is visible as dissociated, not synchronized, trajectories.</figcaption>
 </figure>
-<p>One subject stands apart from this pattern entirely, showing anomalously positive coupling on every metric — a single, consistent outlier rather than noise in the fit.</p>
+<p>One subject stands apart from this pattern entirely, showing anomalously positive coupling on every metric, a single, consistent outlier rather than noise in the fit.</p>
 <figure style="margin:1.5rem 0;" class="figure">
   <img src="https://raw.githubusercontent.com/CarolGachema/Intersystem-Noise-Coupling/main/figures/coupling_analysis.png" class="img-fluid rounded figure-img" alt="OU model phase space showing coupled versus dissociated dynamics" style="box-shadow:0 4px 16px rgba(0,0,0,0.1); width:100%;">
   <figcaption style="font-size:0.85rem;opacity:0.75;margin-top:0.4rem;">Fig 3. "Fig 3. Coupling strength ranked across all subjects (left), u15 stands apart from the rest of the cohort; sympathovagal correlation and per-subject noise levels shown alongside."</figcaption>
@@ -487,14 +487,10 @@ dY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)</code></pre>
 </section>
 <section id="phase-two-testing-it-under-stress" class="level3">
 <h3 class="anchored" data-anchor-id="phase-two-testing-it-under-stress">Phase Two: Testing It Under Stress</h3>
-<p>The healthy baseline is the control condition, not the finding. The actual test of the hypothesis is whether this near-independence signature holds up when a system is under genuine physiological strain — and that’s what MIMIC-IV is for. ICU waveform data (ECG-derived RR intervals and respiratory waveforms from critically ill patients) will run through the identical pipeline, asking directly: does intersystem coupling strengthen, reorganize, or break down under critical illness? That comparison is what turns this from a description of healthy physiology into a candidate diagnostic signature.</p>
-</section>
-</section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<p>Placeholder text. Link to the live dashboard and any documentation for partner organizations.</p>
+<p>The healthy baseline is the control condition, not the finding. The actual test of the hypothesis is whether this near-independence signature holds up when a system is under genuine physiological strain, and that’s what MIMIC-IV is for. ICU waveform data (ECG-derived RR intervals and respiratory waveforms from critically ill patients) will run through the identical pipeline, asking whether intersystem coupling strengthens, reorganizes, or breaks down under critical illness</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -584,7 +580,7 @@ dY = θ_y(−Y)dt + κ_yx·X·dt + σ_y·dW_y    (locomotor)</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.com");
+        var filterRegex = new RegExp("https:\/\/carolgachema\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
