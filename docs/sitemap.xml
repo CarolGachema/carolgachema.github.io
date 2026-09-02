@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://carolgachema.github.io/research.html</loc>
-    <lastmod>2026-07-31T13:14:42.099Z</lastmod>
+    <lastmod>2026-08-10T14:06:15.939Z</lastmod>
   </url>
   <url>
     <loc>https://carolgachema.github.io/research/pdac.html</loc>
@@ -10,15 +10,19 @@
   </url>
   <url>
     <loc>https://carolgachema.github.io/research/hiv.html</loc>
-    <lastmod>2026-07-30T14:20:49.214Z</lastmod>
+    <lastmod>2026-08-08T09:53:04.727Z</lastmod>
   </url>
   <url>
-    <loc>https://carolgachema.github.io/research/alzheimers.html</loc>
-    <lastmod>2026-07-26T12:22:03.334Z</lastmod>
+    <loc>https://carolgachema.github.io/research/aurora-b-substrate-mapping.html</loc>
+    <lastmod>2026-08-30T12:38:49.384Z</lastmod>
   </url>
   <url>
-    <loc>https://carolgachema.github.io/blog.html</loc>
-    <lastmod>2026-08-01T13:32:54.297Z</lastmod>
+    <loc>https://carolgachema.github.io/index.html</loc>
+    <lastmod>2026-08-08T09:30:56.696Z</lastmod>
+  </url>
+  <url>
+    <loc>https://carolgachema.github.io/blog/tnbc-deep-dive.html</loc>
+    <lastmod>2026-09-01T09:44:29.155Z</lastmod>
   </url>
   <url>
     <loc>https://carolgachema.github.io/blog/on-congenital-insensitivity.html</loc>
@@ -38,11 +42,15 @@
   </url>
   <url>
     <loc>https://carolgachema.github.io/blog/ping-pong-ping-pong.html</loc>
-    <lastmod>2026-08-01T13:19:13.819Z</lastmod>
+    <lastmod>2026-08-30T12:46:26.508Z</lastmod>
   </url>
   <url>
-    <loc>https://carolgachema.github.io/index.html</loc>
-    <lastmod>2026-08-05T11:46:52.648Z</lastmod>
+    <loc>https://carolgachema.github.io/blog.html</loc>
+    <lastmod>2026-08-18T09:01:45.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://carolgachema.github.io/research/alzheimers.html</loc>
+    <lastmod>2026-07-26T12:22:03.334Z</lastmod>
   </url>
   <url>
     <loc>https://carolgachema.github.io/research/deg.html</loc>
@@ -50,7 +58,7 @@
   </url>
   <url>
     <loc>https://carolgachema.github.io/research/intersystem-noise-coupling.html</loc>
-    <lastmod>2026-07-29T15:08:40.984Z</lastmod>
+    <lastmod>2026-08-19T09:03:24.179Z</lastmod>
   </url>
   <url>
     <loc>https://carolgachema.github.io/research/viral-cns.html</loc>

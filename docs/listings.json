@@ -2,17 +2,19 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/aurora-b-substrate-mapping.html",
       "/research/intersystem-noise-coupling.html",
       "/research/pdac.html",
       "/research/viral-cns.html",
       "/research/alzheimers.html",
-      "/research/deg.html",
-      "/research/hiv.html"
+      "/research/hiv.html",
+      "/research/deg.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/tnbc-deep-dive.html",
       "/blog/magics-shrooms.html",
       "/blog/on-congenital-insensitivity.html",
       "/blog/ping-pong-ping-pong.html",

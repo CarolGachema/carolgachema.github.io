@@ -9,8 +9,107 @@
 <link>https://carolgachema.github.io/blog.html</link>
 <atom:link href="https://carolgachema.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Biomedical Scientist &amp; Bioinformatician</description>
-<generator>quarto-1.9.36</generator>
-<lastBuildDate>Fri, 31 Jul 2026 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 18 Aug 2026 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Cancer With No handles</title>
+  <link>https://carolgachema.github.io/blog/tnbc-deep-dive.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>Breast cancer is several genuinely different diseases that happen to start in the same tissue, and the difference between them comes down to three molecular “handles” a tumor either has or doesn’t.</p>
+<p>Understanding what those handles are, and what it means for a tumor to have none of them, is the only way to understand why triple-negative breast cancer is simultaneously a biology problem and, in the United States, a racial equity problem hiding in plain sight.</p>
+<section id="the-positive-cancers" class="level2">
+<h2 class="anchored" data-anchor-id="the-positive-cancers">The “Positive” Cancers</h2>
+<p>Most breast tumors are, in a strange way, cooperative. They express receptors on their surface, molecular docking stations, that a drug can be designed to fit into like a key into a lock.</p>
+<p><strong>1. Estrogen receptor positive (ER+)</strong></p>
+<p>Tumors carry receptors that respond to circulating estrogen, using it as fuel for growth. This sounds like bad news, and in one sense it is, and it’s also an exploitable weakness.</p>
+<p>Drugs like <em>tamoxifen</em> block the receptor directly; <em>aromatase</em> inhibitors cut off the estrogen supply at the source.</p>
+<p>ER+ disease is the most common form of breast cancer, and it’s also, generally, the most survivable, precisely because the tumor has handed oncologists something to interfere with. [1][2]</p>
+<p><strong>2. Progesterone receptor positive (PR+)</strong></p>
+<p>Tumors work on a similar principle, often alongside ER+ status, and are treated with overlapping hormone-blocking strategies.</p>
+<p><strong>3. HER2-positive</strong></p>
+<p>Tumors overexpress a growth-signaling protein called HER2 on their surface, which drives aggressive and fast growth. <strong>Trastuzumab</strong> (Herceptin) and the generation of HER2-targeted drugs that followed it transformed HER2+ disease from one of the more dangerous subtypes into one of the more treatable ones, simply because there was a specific protein to aim at.</p>
+<p>In every case, <em>the tumor’s molecular identity is the treatment plan.</em></p>
+</section>
+<section id="triple-negative" class="level2">
+<h2 class="anchored" data-anchor-id="triple-negative">Triple-Negative</h2>
+<p>Triple-negative breast cancer (TNBC) is defined entirely by absence. No estrogen receptor. No progesterone receptor. No HER2 amplification.</p>
+<p>It accounts for roughly one in eight to one in seven breast cancer diagnoses overall, but it is not evenly distributed across age, geography, or race. [1][2]</p>
+<p>TNBC skews toward younger patients, is more likely to be caught at a later stage, is more likely to recur after treatment, and its five-year survival drops sharply once the disease has spread beyond the breast. [1]</p>
+<p>For a long time, the absence of a molecular target meant the absence of a targeted treatment, and chemotherapy remained the backbone of TNBC treatment for decades while other subtypes got increasingly precise weapons.</p>
+<p>That’s beginning to shift:</p>
+<ul>
+<li><strong>Pembrolizumab</strong>, an immunotherapy drug, showed real benefit in early-stage TNBC when added to standard treatment (the KEYNOTE-522 trial). [7]</li>
+<li><strong>Sacituzumab govitecan</strong>, an antibody-drug conjugate that smuggles chemotherapy directly into tumor cells via a surface protein TNBC does express, extended survival in metastatic disease (the ASCENT trial). [8]</li>
+<li>And for the subset of TNBC driven by inherited BRCA1 or BRCA2 mutations, PARP inhibitors like olaparib exploit a specific DNA-repair vulnerability those mutations create (the OlympiA trial). [9]</li>
+</ul>
+</section>
+<section id="aurora-b" class="level2">
+<h2 class="anchored" data-anchor-id="aurora-b">Aurora B</h2>
+<p>One of those emerging places is a small enzyme called Aurora B kinase, and understanding why requires understanding that genomic chaos is not simply bad for a tumor.</p>
+<p>Every time a cell divides, its chromosomes have to be copied and pulled apart with near-perfect precision. Cancer cells are frequently sloppy at this, a phenomenon called chromosomal instability, or CIN, and the sloppiness behaves less like a symptom and more like a dial the tumor is, in effect, tuning.</p>
+<p>Turn the dial too low, and the cancer stays genetically uniform: boring, predictable, an easy target for a single well-matched therapy. Turn it too high, and cells accumulate so much division-related damage that they die mid-split <em>(mitotic catastrophe)</em>.</p>
+<p>The tumor’s actual advantage lives in the narrow band between those extremes, just enough chromosomal variation for natural selection to test different mutations against chemotherapy and the immune system, without so much chaos that any given cell fails to survive the division that produced it.</p>
+<p>That narrow band is where drug resistance gets manufactured, where relapse originates, where metastatic clones get their start.</p>
+<p>Aurora B sits directly at that dial. It’s a kinase (an enzyme that tags other proteins with phosphate groups) and depending on exactly where the tag lands, the target protein switches on, switches off, changes shape, or lets go of whatever it was holding, often a chromosome mid-division. [3][4]</p>
+<p>Aurora B governs how chromosomes attach to the mitotic spindle and get pulled apart, which makes it one of the central regulators of that chaos dial itself.</p>
+<p>In TNBC specifically, Aurora B runs recurrently overactive. Because the tumor is already dependent on walking a fine genomic line, pushing Aurora B activity past its tolerable limit can force TNBC cells into the mitotic catastrophe they’d otherwise avoid. [5] Combinations built around Aurora and angiogenic kinase inhibition have already reached phase II trials in previously treated, metastatic TNBC. It’s an active area of drug development. [6]</p>
+<p>But a molecular vulnerability only matters for the patients who actually get diagnosed early, tested, and treated in time, and TNBC turns out to be as much a story about who gets access to that timeline as it is about kinases.</p>
+</section>
+<section id="why-this-lands-hardest-on-black-women" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-lands-hardest-on-black-women">Why This Lands Hardest on Black Women</h2>
+<p>Black women in the United States are diagnosed with breast cancer at a rate roughly 5% lower than white women, according to the <em>American Cancer Society’s 2024–2025 Breast Cancer Facts and Figures report.</em> [15] Despite that, they are 38 to 41% more likely to die of breast cancer than white women — 38% by that same ACS report, 41% by ACS’s separate report on cancer among African American and Black people, and two to three times more likely to be diagnosed with TNBC specifically. [15][16][17]</p>
+<p>And once diagnosed, the outcomes gap widens further. Black women with TNBC are roughly 30% more likely to die of it than white women with the same diagnosis, a gap researchers link partly to lower rates of receiving surgery and chemotherapy, meaning some of this disparity is not about the tumor at all. [12][13]</p>
+<p><strong>Biologically</strong></p>
+<p>Triple-negative and “basal-like” breast cancers occur at meaningfully different rates across populations with different genetic ancestry, and BRCA1 and BRCA2 mutations, which sharply raise TNBC risk, show up at higher prevalence in Black patients with metastatic TNBC than in white patients with the same diagnosis in at least one recent analysis — 12% versus 7%. [11][14]</p>
+<p><strong>Structurally</strong></p>
+<p>Researchers studying neighborhood deprivation have found it independently associated with TNBC risk, suggesting that where you live, and everything that correlates with that, is doing real biological work. [10]</p>
+<p>Add to that well-documented gaps in access to genetic testing, to timely screening, to surgery, and to chemotherapy once diagnosed, and the picture that emerges is one where biology sets part of the stage, and a healthcare system that delivers unequal access does a great deal of the rest.</p>
+<p>Neither thread fully explains the gap alone. Both are true at once, which makes this a harder problem to solve.</p>
+</section>
+<section id="the-molecular-work-still-matters" class="level2">
+<h2 class="anchored" data-anchor-id="the-molecular-work-still-matters">The Molecular Work Still Matters</h2>
+<p>None of the structural half of this problem gets fixed by a kinase. But the biological half is a starting point.</p>
+<hr>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<ol type="1">
+<li>Howard, F. et al.&nbsp;“Epidemiology of Triple-Negative Breast Cancer: A Review” — Cancer Journal. TNBC incidence and survival gap vs.&nbsp;hormone-receptor-positive disease.</li>
+<li>American Cancer Society, “Triple-negative Breast Cancer” — receptor status, staging, and general prognosis.</li>
+<li>Krenn, V. &amp; Musacchio, A. “The Aurora B Kinase in Chromosome Bi-Orientation and Spindle Checkpoint Signaling” — Frontiers in Cell and Developmental Biology.</li>
+<li>Zaytsev, A. et al.&nbsp;“Aurora B kinase is recruited to multiple discrete kinetochore and centromere regions” — Journal of Cell Biology.</li>
+<li>Yang, J. et al.&nbsp;“Antineoplastic effects of an Aurora B kinase inhibitor in breast cancer” — Molecular Cancer. Barasertib (AZD1152) mechanism and preclinical breast cancer data.</li>
+<li>Diamond, J. et al.&nbsp;“A phase II clinical trial of the Aurora and angiogenic kinase inhibitor ENMD-2076 for previously treated, advanced, or metastatic triple-negative breast cancer” — Breast Cancer Research.</li>
+<li>Schmid, P. et al.&nbsp;“Pembrolizumab for Early Triple-Negative Breast Cancer” (KEYNOTE-522) — New England Journal of Medicine, 2020.</li>
+<li>Bardia, A. et al.&nbsp;“Sacituzumab Govitecan in Metastatic Triple-Negative Breast Cancer” (ASCENT) — New England Journal of Medicine, 2021.</li>
+<li>Tutt, A.N.J. et al.&nbsp;“Adjuvant Olaparib for Patients with BRCA1- or BRCA2-Mutated Breast Cancer” (OlympiA) — New England Journal of Medicine, 2021.</li>
+<li>Understanding the role of neighborhood deprivation in racial disparities in triple negative breast cancer — Cancer, 2025.</li>
+<li>Sisters Network Inc.&nbsp;“About Breast Cancer” — subtype distribution by race, HR+/HER2- prevalence by group.</li>
+<li>Matar-Ujvary, R. et al.&nbsp;“Triple-Negative Breast Cancer, Recurrence, and Survival Outcomes in Young Black Women” — Journal of Racial and Ethnic Health Disparities, 2025.</li>
+<li>“Triple-negative breast cancer in Black women: Risks and outlook” — Medical News Today, 2025.</li>
+<li>Biomarker, treatment patterns, and survival differences in metastatic triple-negative breast cancer by race in the United States — npj Breast Cancer, 2026.</li>
+<li>Black Cancer Research Foundation (BCRF). “Black Women and Breast Cancer: Disparities and Research.”</li>
+<li>“Triple-Negative Breast Cancer in Black Women” — Black Health, citing American Cancer Society Cancer Facts &amp; Figures for African American/Black People.</li>
+<li>Racial and regional disparities of triple negative breast cancer incidence rates in the United States — an analysis of SEER/NPCR data, 2011–2019.</li>
+</ol>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>oncology</category>
+  <category>health equity</category>
+  <category>cancer biology</category>
+  <guid>https://carolgachema.github.io/blog/tnbc-deep-dive.html</guid>
+  <pubDate>Tue, 18 Aug 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://carolgachema.github.io/blog/images/aurorab.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Magic Shrooms</title>
   <link>https://carolgachema.github.io/blog/magics-shrooms.html</link>
